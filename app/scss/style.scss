@@ -186,7 +186,7 @@
         font-size: 15px;
         line-height: 1.2;
         letter-spacing: 0.3px;
-        padding: 0 10px 2px;
+        padding: 3px 10px 5px;
         transition: all .3s;
         border-top: 2px solid transparent;
     }
@@ -212,8 +212,8 @@
     &__link-active {
         background-color: #fcd7b6;
         border-radius: 50px;
-        box-shadow: 0px 7px 10px #A3BBC8;
+        // box-shadow: 0px 7px 10px #A3BBC8;
     }
 }
-
+// Style for header finished
 @import'media';
