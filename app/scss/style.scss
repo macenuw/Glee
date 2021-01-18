@@ -6,6 +6,7 @@
 .header {
     padding-top: 48px;
     align-items: center;
+    margin-bottom: 45px;
 
     &__logo-wrapper {
         min-width: 300px;
@@ -36,7 +37,14 @@
         background-color: #a3bbc8;
         background-size: 60%;
     }
+    &__search:focus {
+        outline: transparent;
+        border-left: 1px solid black;
+     }
 
+    &__search:active {
+        box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.75);
+    }
 
     &__desires {
         background-color: #fcd7b6;
@@ -45,7 +53,7 @@
         margin-right: 18px;
     }
 
-    &__like {
+    &__favorites {
         background-image: url('../images/like.svg');
         background-position: center center;
         background-repeat: no-repeat;
@@ -54,20 +62,28 @@
         padding: 13px 38px 2px;
         position: relative;
         transition: .5s;
+        border-radius: 50px 0 0 50px;
     }
 
-    &__like:hover {
+    &__favorites:hover,
+    &__favorites:focus {
         background-position-y: 0;
         background-position-x: 20px;
         background-size: 45%;
+        outline: transparent;
     }
 
-    &__like:hover span {
+    &__favorites:hover .header__number,
+    &__favorites:focus .header__number {
         width: 20px;
         height: 20px;
         line-height: 20px;
         top: 6px;
         right: 28px;
+    }
+
+    &__favorites:active {
+        box-shadow: inset 5px 0px 2px rgba(0, 0, 0, 0.75);
     }
 
     &__cart {
@@ -80,15 +96,19 @@
         border-left: 1px solid #fde7d3;
         position: relative;
         transition: .7s;
+        border-radius: 0 50px 50px 0;
     }
 
-    &__cart:hover {
+    &__cart:hover,
+    &__cart:focus {
         background-position-y: 0;
         background-position-x: 21px;
         background-size: 45%;
+        outline: transparent;
     }
 
-    &__cart:hover span {
+    &__cart:hover .header__number,
+    &__cart:focus .header__number {
         width: 20px;
         height: 20px;
         line-height: 20px;
@@ -96,7 +116,11 @@
         right: 26px;
     }
 
-    & span {
+    &__cart:active {
+        box-shadow: inset -5px 0px 2px rgba(0, 0, 0, 0.75);
+    }
+
+    &__number {
         color: #334c59;
         background-color: white;
         width: 16px;
@@ -128,6 +152,27 @@
     &__user-menu:hover {
         background-color: #74858e;
     }
+
+    &__user-menu:focus {
+       outline: transparent;
+       border-right: 1px solid black;
+    }
+
+    &__user-menu:active {
+        box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.75);
+    }
+
+    &__name-button {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
 }
 
 .menu {
@@ -141,8 +186,9 @@
         font-size: 15px;
         line-height: 1.2;
         letter-spacing: 0.3px;
-        padding: 0 10px 2px;
+        padding: 3px 10px 5px;
         transition: all .3s;
+        border-top: 2px solid transparent;
     }
 
     &__link:hover {
@@ -150,9 +196,24 @@
         border-radius: 50px;
     }
 
+    &__link:focus {
+        outline: transparent;
+        border-top: 2px solid black;
+    }
+
+    &__link:active {
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
     &__item+.menu__item {
         margin-left: 12px;
     }
-}
 
+    &__link-active {
+        background-color: #fcd7b6;
+        border-radius: 50px;
+        // box-shadow: 0px 7px 10px #A3BBC8;
+    }
+}
+// Style for header finished
 @import'media';
