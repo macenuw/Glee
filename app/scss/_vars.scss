@@ -1,29 +1,49 @@
-
-%dms-b{
+%dms-b {
     font-family: 'DMSans-Bold';
     font-weight: 700;
 }
 
-%dms-m{
+%dms-m {
     font-family: 'DMSans-Medium', sans-serif;
     font-weight: 500;
 }
-%dms-r{
+
+%dms-r {
     font-family: 'DMSans-Regular', sans-serif;
     font-weight: 400;
 }
 
-%pop-b{
+%pop-b {
     font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
 }
 
-%rubik-m{
+%rubik-m {
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
 }
 
-%rubik-r{
+%rubik-r {
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
+}
+
+%hide-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+%title {
+    font-size: 36px;
+    color: rgb(25, 25, 25);
+    line-height: 1.2;
+    @extend %dms-b;
+
 }

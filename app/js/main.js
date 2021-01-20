@@ -1,8 +1,8 @@
 $(function(){
-
+    $('.new-trends__slider').slick({
+        dots: true,
+        arrows: false,
+    });
+    
+    var mixer = mixitup('.week-product__items');
 })
-// document.addEventListener('click', event => {
-//     if (event.target.matches('button')) {
-//       event.target.focus()
-//     }
-//   })
