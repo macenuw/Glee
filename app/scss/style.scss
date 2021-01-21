@@ -390,26 +390,19 @@
     }
 
     &__items {
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 39px;
     }
 
     &__inner {
         position: relative;
-        margin: 0 0 40px 30px;
+        margin-bottom:40px;
 
         &:hover .week-product__buttons {
             opacity: 1;
         }
-    }
-
-    &__inner:nth-child(1) {
-        margin: 0 0 40px 0px;
-    }
-
-    &__inner:nth-child(5) {
-        margin: 0 0 40px 0px;
     }
 
     &__item {
