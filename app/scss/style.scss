@@ -84,7 +84,7 @@
     }
 
     &__favorites:active {
-        box-shadow: inset 5px 0px 2px rgba(0, 0, 0, 0.75);
+        box-shadow:  inset 5px 0px 2px rgba(0, 0, 0, 0.75);
     }
 
     &__cart {
@@ -404,6 +404,7 @@
         outline: transparent;
         transition: .5s;
         padding: 5px 10px;
+        cursor: pointer;
 
         &:hover {
             border-bottom: 2px solid black;
@@ -495,6 +496,7 @@
         outline: transparent;
         border: 1px solid transparent;
         transition: .3s;
+        cursor: pointer;
 
     }
 
@@ -671,6 +673,11 @@
         color: white;
         padding: 11px 16px;
         margin-left: -4px;
+        cursor: pointer;
+        &:hover{
+            color:#a3bbc8;
+            background-color:#334c59;
+        }
     }
 
     &__copy {
