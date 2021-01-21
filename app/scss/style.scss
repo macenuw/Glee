@@ -381,7 +381,7 @@
         }
     }
 
-    &__btn .mixitup-control-active {
+    &__btn.mixitup-control-active {
         color: #1a1a1a;
     }
 
@@ -390,8 +390,6 @@
     }
 
     &__items {
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 39px;
     }
