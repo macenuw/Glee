@@ -547,6 +547,7 @@
 
     &__address {
         width: 300px;
+        font-style: normal;
     }
 
     &__text {
@@ -628,10 +629,13 @@
     }
 
     &__button {
+        @extend %dms-r;
         border: none;
+        font-size: 14px;
+        line-height: 1.2;
         background-color: #a3bbc8;
         color: white;
-        padding: 10px 18px;
+        padding: 11px 16px;
         margin-left: -4px;
     }
 
