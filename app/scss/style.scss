@@ -391,7 +391,7 @@
 
     &__control {
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 74px;
     }
 
     &__btn {
@@ -400,11 +400,14 @@
         @extend %dms-b;
         font-size: 16px;
         color: #8b8b8b;
-        border-bottom: 2px solid transparent;
+        border: 2px solid transparent;
         outline: transparent;
+        transition: .5s;
+        padding: 5px 10px;
 
         &:hover {
             border-bottom: 2px solid black;
+            border-radius: 50%;
         }
 
         &:focus {
@@ -417,7 +420,7 @@
     }
 
     &__btn+.week-product__btn {
-        margin-left: 20px;
+        margin-left: 12px;
     }
 
     &__items {
