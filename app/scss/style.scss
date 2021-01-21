@@ -304,6 +304,7 @@
     &__items {
         flex-direction: column;
         padding: 50px 150px;
+        color: #636362;
     }
 
     &__items+.new-trends__items {
@@ -328,6 +329,16 @@
         background-image: url('../images/support.svg');
         background-position: left top;
         background-repeat: no-repeat;
+        position: relative;
+        &::before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 32px;
+            left: 32px;
+            background-image: url('../images/support-spher.png')
+        }
     }
 
     &__delivery {
@@ -486,9 +497,9 @@
             box-shadow: inset 4px 0px 4px rgba(0, 0, 0, 0.25);
         }
     }
-
+ 
     &--cart {
-        background-color: #a3bbc8;
+        background-color:  #fefefe;
         background-image: url('../images/week-btn-cart.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -588,6 +599,10 @@
         font-size: 14px;
         line-height: 1.2;
         color: #a7a7a7;
+        &:hover{
+            color: #7b7b7b;
+            letter-spacing: 0.6px;
+        }
     }
 
     &__account {
