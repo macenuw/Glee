@@ -62,7 +62,7 @@
         background-position-x: 28px;
         padding: 13px 38px 2px;
         position: relative;
-        transition: .5s;
+        transition: all .5s;
         border-radius: 50px 0 0 50px;
     }
 
@@ -84,7 +84,7 @@
     }
 
     &__favorites:active {
-        box-shadow:  inset 5px 0px 2px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 5px 0px 2px rgba(0, 0, 0, 0.75);
     }
 
     &__cart {
@@ -96,7 +96,7 @@
         padding: 13px 38px 2px;
         border-left: 1px solid #fde7d3;
         position: relative;
-        transition: .7s;
+        transition: all .7s;
         border-radius: 0 50px 50px 0;
     }
 
@@ -134,7 +134,7 @@
         top: 5px;
         right: 21px;
         @extend %dms-r;
-        transition: .5s;
+        transition: all .5s;
     }
 
     &__user-menu {
@@ -147,7 +147,7 @@
         background-repeat: no-repeat;
         border: none;
         cursor: pointer;
-        transition: .3s;
+        transition: all .3s;
     }
 
     &__user-menu:hover {
@@ -261,7 +261,7 @@
         padding: 21px 20px 20px 27px;
         background-color: #a3bbc8;
         align-items: center;
-        transition: .5s;
+        transition: all .5s;
 
         &:hover {
             letter-spacing: 1px;
@@ -293,7 +293,7 @@
         height: 30px;
         border-radius: 50%;
         opacity: 0.3;
-        transition: 0.3s;
+        transition: all 0.3s;
         cursor: pointer;
         outline: transparent;
     }
@@ -365,17 +365,37 @@
         background-image: url('../images/delivery.svg');
         background-position: left top;
         background-repeat: no-repeat;
+        position: relative;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 16px;
+            left: 32px;
+            background-image: url('../images/support-spher.png')
+        }
     }
 
     &__payment {
         @extend %dms-r;
         font-size: 16px;
         line-height: 1.9;
-        max-width: 297px;
+        max-width: 298px;
         padding-left: 90px;
         background-image: url('../images/payment.svg');
         background-position: left top;
         background-repeat: no-repeat;
+        position: relative;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 32px;
+            left: 32px;
+            background-image: url('../images/support-spher.png')
+        }
     }
 }
 
@@ -402,7 +422,7 @@
         color: #8b8b8b;
         border: 2px solid transparent;
         outline: transparent;
-        transition: .5s;
+        transition: all .5s;
         padding: 5px 10px;
         cursor: pointer;
 
@@ -485,7 +505,7 @@
         right: 0;
         bottom: 0;
         opacity: 0;
-        transition: .5s;
+        transition: all .5s;
     }
 
     &__button {
@@ -495,7 +515,7 @@
         box-shadow: 0px 3px 3px 2px rgba(37, 37, 37, 0.35);
         outline: transparent;
         border: 1px solid transparent;
-        transition: .3s;
+        transition: all .3s;
         cursor: pointer;
 
     }
@@ -525,7 +545,18 @@
             box-shadow: inset 4px 0px 4px rgba(0, 0, 0, 0.25);
         }
     }
-
+    .Contact_us_24_hours_a_day__7_days_a_week_ {
+        font-size: 16px;
+        font-family: "DM Sans";
+        color: rgb(88, 88, 88);
+        line-height: 1.875;
+        text-align: left;
+        position: absolute;
+        left: 298.578px;
+        top: 1064.4px;
+        z-index: 222;
+      }
+      
     &--cart {
         background-color: #fefefe;
         background-image: url('../images/week-btn-cart.svg');
@@ -680,9 +711,10 @@
         padding: 11px 16px;
         margin-left: -4px;
         cursor: pointer;
-        &:hover{
-            color:#a3bbc8;
-            background-color:#334c59;
+
+        &:hover {
+            color: #a3bbc8;
+            background-color: #334c59;
         }
     }
 
