@@ -603,17 +603,17 @@
 
 .one-product {
     background-color: #feefe2;
-    width: 870px;
+    width: 48%;
     height: 390px;
-    position: relative;
-    justify-content: flex-end;
-    padding: 90px 100px 100px;
+    justify-content: space-around;
+    padding: 90px 0 100px;
+  
 
     &__img {
-       max-height: 100%;
-        position: absolute;
-        bottom: 85px;
-        left: 17%;
+       height: 400px;
+       width: 100%;
+       margin-top: -190px;
+       
     }
 
     &__title {
