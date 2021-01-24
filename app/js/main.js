@@ -3,6 +3,27 @@ $(function(){
         dots: true,
         arrows: false,
     });
+
+    $('.articles__slider').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
     
-    var mixer = mixitup('.week-product__items');
+    
+
+
+    var mixer1 = mixitup('.week-product__items', {
+        selectors: {
+            control: '.week-product__btn'
+        }
+    });
+    var mixer2 = mixitup('.new-design__items', {
+        selectors: {
+            control: '.new-design__btn'
+        }
+    });
 })
