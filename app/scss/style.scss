@@ -237,7 +237,9 @@
         max-width: 411px;
         margin-bottom: 26px;
         color: #243f4d;
-        margin-left: 0px
+        margin-left: 0px;
+        text-transform: uppercase;
+        
     }
 
     &__text {
@@ -440,6 +442,10 @@
         }
     }
 
+    &__hide-name {
+        @extend %hide-text;
+    }
+
     &__btn.mixitup-control-active {
         color: #1a1a1a;
     }
@@ -603,17 +609,23 @@
 
 .one-product {
     background-color: #feefe2;
-    width: 48%;
+    width: 49%;
     height: 390px;
     justify-content: space-around;
     padding: 90px 0 100px;
-  
+
+    &__inner {
+        width: 40%;
+    }
 
     &__img {
-       height: 400px;
-       width: 100%;
-       margin-top: -190px;
-       
+        height: 400px;
+        margin-left: auto;
+        margin-top: -185px;
+    }
+
+    &__info {
+        width: 55%;
     }
 
     &__title {
@@ -651,6 +663,13 @@
         background-position: center right;
         background-repeat: no-repeat;
         background-position-x: 140px;
+        transition: .3s;
+
+        &:hover {
+            color: white;
+            background-color: #243f4d;
+            background-image: url(../images/white-arrow.svg);
+        }
     }
 }
 
@@ -694,9 +713,14 @@
             color: #1a1a1a;
         }
 
+
         &+.new-design__btn {
             margin-left: 12px;
         }
+    }
+
+    &__hide-name {
+        @extend %hide-text;
     }
 
     &__btn.mixitup-control-active {
@@ -806,7 +830,6 @@
         border-radius: 8px;
         background-color: white;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-        cursor: pointer;
 
         &:hover .articles__news {
             padding: 5px 135px;
@@ -867,6 +890,7 @@
         margin-left: 25px;
         font-size: 12px;
         line-height: 1.2;
+        color: #262626;
     }
 
     &__partners {
@@ -892,7 +916,7 @@
 
 // articles finished
 .footer {
-    .footer__inner {
+    &__inner {
         padding: 80px 0 70px;
     }
 
