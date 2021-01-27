@@ -365,15 +365,15 @@
         margin-bottom: 39px;
         margin-bottom: 185px;
     }
+}
 
-    &__inner {
-        position: relative;
-        margin-bottom: 40px;
+.product-card {
+    position: relative;
+    margin-bottom: 40px;
 
-        &:hover {
-            .week-product__buttons {
-                opacity: 1;
-            }
+    &:hover {
+        .product-card__buttons {
+            opacity: 1;
         }
     }
 
@@ -477,7 +477,6 @@
         &+& {
             margin-left: 16px;
         }
-
     }
 }
 
@@ -561,7 +560,6 @@
     }
 
     &__btn {
-        display: inline-block;
         @extend %rubik-m;
         font-size: 15px;
         line-height: 1.2;
@@ -570,16 +568,16 @@
         border: 1px solid #b3b7b5;
         border-radius: 5px;
         width: 180px;
-        background-image: url('../images/blue-arrow.svg');
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-position-x: 140px;
         transition: .3s;
+        align-items: center;
 
         &:hover {
             color: white;
             background-color: #243f4d;
-            background-image: url(../images/white-arrow.svg);
+
+            & path {
+                fill: white;
+            }
         }
     }
 }
