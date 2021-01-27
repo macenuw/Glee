@@ -24,7 +24,11 @@ function browsersync() {
 
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        'node_modules/fancybox/dist/css/jquery.fancybox.css',
+        'node_modules/slick-carousel/slick/slick.scss',
+        'app/scss/style.scss'
+    ])
         .pipe(scss({
             outputStyle: 'compressed'
         }))
@@ -40,6 +44,9 @@ function styles() {
 function scripts() {
     return src([
             'node_modules/jquery/dist/jquery.js',
+            'node_modules/mixitup/dist/mixitup.js',
+            'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/fancybox/dist/js/jquery.fancybox.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))

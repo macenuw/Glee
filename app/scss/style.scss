@@ -318,7 +318,8 @@
 
     &__info-item {
         width: 100%;
-        padding: 48px 160px 44px 145px;
+        padding: 48px 155px 44px 140px;
+        margin: auto 0;
 
         &:not(:last-child) {
             border-right: 1px solid #e8e4df;
@@ -473,17 +474,10 @@
             }
         }
 
-    }
+        &+& {
+            margin-left: 16px;
+        }
 
-
-    &__button+.week-product__button {
-        margin-left: 16px;
-    }
-
-
-
-    &__hiden {
-        @extend %hide-text;
     }
 }
 
