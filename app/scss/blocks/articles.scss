@@ -1,0 +1,110 @@
+.articles {
+    padding-top: 120px;
+
+    &__inner {
+        padding-bottom: 45px;
+    }
+
+    &__title {
+        @extend %title;
+    }
+
+    &__link {
+        margin: auto 0;
+        @extend %dms-b;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #262626;
+        align-items: center;
+    }
+
+    &__items {
+        margin-bottom: -169px;
+    }
+
+    &__item {
+        max-width: 370px;
+        position: relative;
+        height: 420px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    }
+
+    &__news {
+        @extend %dms-b;
+        font-size: 14px;
+        line-height: 1.4;
+        color: white;
+        text-transform: uppercase;
+        background-color: #a3bbc8;
+        padding: 5px 30px;
+        display: block;
+        position: absolute;
+        border-radius: 25px;
+        left: 25px;
+        top: 235px;
+        transition: .3s;
+    }
+
+    &__info {
+        padding: 35px 27px 25px;
+    }
+
+    &__text {
+        @extend %dms-m;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #262626;
+        margin-bottom: 15px;
+        max-width: 285px;
+        min-height: 63px;
+    }
+
+    &__date-autor {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 20px;
+        @extend %dms-m;
+        color: #262626;
+        height: 40px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__date {
+        @extend %dms-b;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    &__autor {
+        @extend %dms-b;
+        text-transform: uppercase;
+        margin-left: 25px;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #262626;
+    }
+
+    &__partners {
+        padding: 260px 0 90px;
+        background-color: #fef7f0;
+        height: 450px;
+    }
+
+    &__slider {
+
+        .slick-track {
+            width: 1170px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &__links {
+        margin: auto;
+    }
+
+}

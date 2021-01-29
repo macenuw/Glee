@@ -1,0 +1,145 @@
+.new-trends {
+    &__slider {
+        background-color: #fcd7b6;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-position-x: 85%;
+        background-position-y: 100px;
+    }
+
+    &__item {
+        outline: transparent;
+    }
+
+    &__inner {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        padding: 215px 0 206px;
+    }
+
+    &__title {
+        @extend %rubik-m;
+        font-size: 72px;
+        line-height: 1;
+        max-width: 411px;
+        margin-bottom: 26px;
+        color: #243f4d;
+        margin-left: 0px;
+        text-transform: uppercase;
+
+    }
+
+    &__text {
+        @extend %rubik-r;
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 375px;
+        color: #436372;
+        margin-bottom: 37px;
+        margin-left: 1px;
+    }
+
+    &__btn {
+        @extend %rubik-m;
+        font-size: 15px;
+        line-height: 1.2;
+        width: 200px;
+        color: white;
+        padding: 21px 20px 20px 27px;
+        background-color: #a3bbc8;
+        align-items: center;
+        transition: all .5s;
+
+        &:hover {
+            letter-spacing: 1px;
+            background-image: url('../images/cart.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position-x: 120px;
+            background-size: 30%;
+
+            & path {
+                fill: transparent;
+            }
+        }
+    }
+
+    &__img {
+        max-height: 264px;
+    }
+
+    .slick-dots {
+        @extend %rubik-m;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    .slick-dots button {
+        background-color: white;
+        font-size: 11px;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.3;
+        transition: all 0.3s;
+        cursor: pointer;
+        outline: transparent;
+    }
+
+    .slick-dots li+li {
+        margin-left: 12px;
+    }
+
+    .slick-active button {
+        opacity: 1;
+        min-width: 15px;
+        min-height: 15px;
+        opacity: 1;
+        outline: transparent;
+    }
+
+    &__info {
+        justify-content: space-around;
+        background-color: #fef7f0;
+    }
+
+    &__info-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 45px 0;
+        margin: auto 0;
+
+        &:not(:last-child) {
+            border-right: 1px solid #e8e4df;
+        }
+    }
+
+    &__info-text {
+        padding-left: 80px;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    &__subtitle {
+        @extend %dms-b;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #414141;
+    }
+
+    &__content-text {
+        @extend %dms-r;
+        font-size: 16px;
+        line-height: 1.9;
+        max-width: 213px;
+        display: block;
+        color: #636362;
+    }
+}

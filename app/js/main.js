@@ -18,12 +18,12 @@ $(function(){
 
     var mixer1 = mixitup('.week-product__items', {
         selectors: {
-            control: '.week-product__btn'
+            control: '.week-product .control__btn'
         }
     });
     var mixer2 = mixitup('.new-design__items', {
         selectors: {
-            control: '.new-design__btn'
+            control: '.new-design .control__btn'
         }
     });
 })

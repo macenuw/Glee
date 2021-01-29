@@ -1,0 +1,64 @@
+.one-product {
+    background-color: #feefe2;
+    width: 49%;
+    height: 390px;
+    justify-content: space-around;
+    padding: 90px 0 100px;
+
+    &__inner {
+        width: 40%;
+    }
+
+    &__img {
+        height: 400px;
+        margin-left: auto;
+        margin-top: -185px;
+    }
+
+    &__info {
+        width: 55%;
+    }
+
+    &__title {
+        @extend %dms-b;
+        font-size: 26px;
+        line-height: 1.2;
+        color: #243f4d;
+        display: block;
+        margin-bottom: 20px;
+        max-width: 350px;
+
+    }
+
+    &__text {
+        @extend %rubik-r;
+        max-width: 350px;
+        font-size: 16px;
+        line-height: 1.5;
+        display: block;
+        color: #243f4d;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        @extend %rubik-m;
+        font-size: 15px;
+        line-height: 1.2;
+        padding: 20px 20px;
+        color: #243f4d;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        width: 180px;
+        transition: .3s;
+        align-items: center;
+
+        &:hover {
+            color: white;
+            background-color: #243f4d;
+
+            & path {
+                fill: white;
+            }
+        }
+    }
+}

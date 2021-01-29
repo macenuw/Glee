@@ -1,0 +1,46 @@
+.new-design {
+    padding: 100px 0 0;
+
+    &__title {
+        @extend %title;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 35px 30px;
+        margin-bottom: 120px;
+
+    }
+
+    &__link {
+        position: relative;
+        border: 1px solid transparent;
+        transition: border-color .3s;
+
+        &:hover {
+            border-color: #1a1a1a;
+        }
+    }
+
+    &__info {
+        @extend %dms-b;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #1a1a1a;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        max-width: 195px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.2;
+        color: #a3bbc8;
+        display: block;
+        margin-top: 15px;
+    }
+}

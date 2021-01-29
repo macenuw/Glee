@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Glee Home Choose your design</title>
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <header class="header d-flex space-between container">
-        <div class="header__logo-wrapper">
+    <header class="header">
+        <nav class="header__navigation d-flex space-between container">
             <a class="logo" href="#">
                 <img src="./images/Glee.png" alt="">
             </a>
-        </div>
-        <nav class="menu">
-            <ul class="menu__list d-flex">
+
+            <ul class="menu header__menu d-flex">
                 <li class="menu__item">
-                    <a class="menu__link menu__link-active" href="#">
+                    <a class="menu__link menu__link--active" href="#">
                         Home +
                     </a>
                 </li>
@@ -50,28 +48,29 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-        <div class="header__user d-flex">
-            <button class="header__search" type="button">
-                <span class="visually-hidden">search button</span></button>
-            <div class="header__desires d-flex">
-                <a class="header__favorites" href="#">
-                    <span class="header__number">0</span>
-                    <span class="visually-hidden">favorites buttom</span></a>
-                <a class="header__cart" href="#">
-                    <span class="header__number">0</span>
-                    <span class="visually-hidden">cart button</span></a>
+
+            <div class="header__user d-flex">
+                <button class="header__search" type="button">
+                    <span class="visually-hidden">search</span></button>
+                <div class="header__desires d-flex">
+                    <a class="header__favorites" href="#">
+                        <span class="header__number">0</span>
+                        <span class="visually-hidden">favorites</span></a>
+                    <a class="header__cart" href="#">
+                        <span class="header__number">0</span>
+                        <span class="visually-hidden">cart</span></a>
+                </div>
+                <button class="header__user-menu" type="button">
+                    <span class="visually-hidden">user menu</span></button>
             </div>
-            <button class="header__user-menu" type="button">
-                <span class="visually-hidden">user menu buttom</span></button>
-        </div>
+        </nav>
     </header>
     <!-- header finished -->
     <section class="new-trends container">
         <div class="new-trends__slider" style="background-image: url('./images/ellipse.png');">
             <div class="new-trends__item">
-                <div class="new-trends__inner d-flex space-between box">
-                    <div class="new-trends__content box">
+                <div class="new-trends__inner d-flex space-between container--box">
+                    <div class="new-trends__content container--box">
                         <h2 class="new-trends__title">
                             smart and trendy
                         </h2>
@@ -89,8 +88,8 @@
                 </div>
             </div>
             <div class="new-trends__item">
-                <div class="new-trends__inner d-flex space-between box">
-                    <div class="new-trends__content box">
+                <div class="new-trends__inner d-flex space-between container--box">
+                    <div class="new-trends__content container--box">
                         <h2 class="new-trends__title">
                             smart and trendy
                         </h2>
@@ -108,8 +107,8 @@
                 </div>
             </div>
             <div class="new-trends__item">
-                <div class="new-trends__inner d-flex space-between box">
-                    <div class="new-trends__content box">
+                <div class="new-trends__inner d-flex space-between container--box">
+                    <div class="new-trends__content container--box">
                         <h2 class="new-trends__title">
                             smart and trendy
                         </h2>
@@ -130,21 +129,21 @@
         <ul class="new-trends__info d-flex">
             <li class="new-trends__info-item">
                 <p class="new-trends__info-text" style="background-image: url('./images/support.svg');">
-                <span class="new-trends__subtitle">Support 24/7</span>
-                <span class="new-trends__content-text">Contact us 24 hours a day, 7 days a week.</span>
-            </p>
+                    <span class="new-trends__subtitle">Support 24/7</span>
+                    <span class="new-trends__content-text">Contact us 24 hours a day, 7 days a week.</span>
+                </p>
             </li>
-            <li class="new-trends__info-item" >
+            <li class="new-trends__info-item">
                 <p class="new-trends__info-text" style="background-image: url('./images/delivery.svg');">
-                <span class="new-trends__subtitle">Delivery</span>
-                <span class="new-trends__content-text">Free shipping on all US order.</span>
-            </p>
+                    <span class="new-trends__subtitle">Delivery</span>
+                    <span class="new-trends__content-text">Free shipping on all US order.</span>
+                </p>
             </li>
-            <li class="new-trends__info-item" >
+            <li class="new-trends__info-item">
                 <p class="new-trends__info-text" style="background-image: url('./images/payment.svg');">
-                <span class="new-trends__subtitle">100% Payment secure</span>
-                <span class="new-trends__content-text">We ensure secure payment with PEV.</span>
-            </p>
+                    <span class="new-trends__subtitle">100% Payment secure</span>
+                    <span class="new-trends__content-text">We ensure secure payment with PEV.</span>
+                </p>
             </li>
         </ul>
     </section>
@@ -152,27 +151,38 @@
     <section class="week-product container">
         <h2 class="week-product__title">Products of the week</h2>
         <ul class="control d-flex">
-            <li class="control__item"> <button class="control__btn week-product__btn" type="button" data-filter="all">
-                    <span class="visually-hidden">filters button all</span> All</button></li>
-            <li class="control__item"> <button class="control__btn week-product__btn" type="button"
-                    data-filter=".category-a">
-                    <span class="visually-hidden">filter button furnitures</span>Furnitures</button></li>
-            <li class="control__item"> <button class="control__btn week-product__btn" type="button"
-                    data-filter=".category-b">
-                    <span class="visually-hidden">filter button chairs</span>Chairs</button></li>
-            <li class="control__item"> <button class="control__btn week-product__btn" type="button"
-                    data-filter=".category-c">
-                    <span class="visually-hidden">filter button lighting</span>Lighting</button></li>
-            <li class="control__item"><button class="control__btn week-product__btn" type="button"
-                    data-filter=".category-d">
-                    <span class="visually-hidden">filter button decor</span>Decor</button></li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter="all">
+                    All
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-a">
+                    Furnitures
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-b">
+                    Chairs
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-c">
+                    Lighting
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-d">
+                    Decor
+                </button>
+            </li>
         </ul>
-        <div class="week-product__items box">
-            <div class="product-card mix category-a">
+        <div class="week-product__items container--box">
+            <article class="product-card mix category-a">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-01.png" alt="wooden radio">
                     <div class="product-card__info">
-                        <span class="product-card__name">Wooden radio</span>
+                        <h3 class="product-card__name">Wooden radio</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -181,7 +191,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -198,7 +208,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -216,7 +226,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -231,12 +241,12 @@
                     </button>
                 </div>
 
-            </div>
-            <div class="product-card mix category-a category-c">
+            </article>
+            <article class="product-card mix category-a category-c">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-02.png" alt="wooden chair">
                     <div class="product-card__info">
-                        <span class="product-card__name">Wooden chair</span>
+                        <h3 class="product-card__name">Wooden chair</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -245,7 +255,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -262,7 +272,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -280,7 +290,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -294,12 +304,12 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-b category-c">
+            </article>
+            <article class="product-card mix category-b category-c">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-03.png" alt="white chair">
                     <div class="product-card__info">
-                        <span class="product-card__name">White chair</span>
+                        <h3 class="product-card__name">White chair</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -308,7 +318,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -325,7 +335,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -343,7 +353,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -357,13 +367,13 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-c category-a"> 
-                <div class="product-card__item"> 
-                    <img class="product-card__img" src="./images/product-04.png" alt="Retro table"> 
-                    <div class="product-card__info"> 
-                        <span class="product-card__name">Retro table</span>  
-                        <span class="product-card__price">$29.00</span>  
+            </article>
+            <article class="product-card mix category-c category-a">
+                <div class="product-card__item">
+                    <img class="product-card__img" src="./images/product-04.png" alt="Retro table">
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Retro table</h3>
+                        <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
                 <div class="product-card__buttons d-flex category-a category-b">
@@ -371,7 +381,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -388,7 +398,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -406,7 +416,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -420,12 +430,12 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-c category-d">
+            </article>
+            <article class="product-card mix category-c category-d">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-05.png" alt="wooden radio">
                     <div class="product-card__info">
-                        <span class="product-card__name">Wooden radio</span>
+                        <h3 class="product-card__name">Wooden radio</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -434,7 +444,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -451,7 +461,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -469,7 +479,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -483,12 +493,12 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-d category-b">
+            </article>
+            <article class="product-card mix category-d category-b">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-06.png" alt="Wooden chair">
                     <div class="product-card__info">
-                        <span class="product-card__name">Wooden chair</span>
+                        <h3 class="product-card__name">Wooden chair</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -497,7 +507,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -514,7 +524,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -532,7 +542,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -546,12 +556,12 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-d category-b">
+            </article>
+            <article class="product-card mix category-d category-b">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-07.png" alt="White chair">
                     <div class="product-card__info">
-                        <span class="product-card__name">White chair</span>
+                        <h3 class="product-card__name">White chair</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -560,7 +570,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -577,7 +587,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -595,7 +605,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -609,12 +619,12 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="product-card mix category-d">
+            </article>
+            <article class="product-card mix category-d">
                 <div class="product-card__item">
                     <img class="product-card__img" src="./images/product-08.png" alt="Retro table">
                     <div class="product-card__info">
-                        <span class="product-card__name">Retro table</span>
+                        <h3 class="product-card__name">Retro table</h3>
                         <span class="product-card__price">$29.00</span>
                     </div>
                 </div>
@@ -623,7 +633,7 @@
                         <span class="visually-hidden">
                             search button
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20">
+                        <svg width="20" height="20" viewcontainer--box="0 0 20 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -640,7 +650,7 @@
                         <span class="visually-hidden">
                             cart button
                         </span>
-                        <svg width="22" height="20" viewBox="0 0 22 20">
+                        <svg width="22" height="20" viewcontainer--box="0 0 22 20">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -658,7 +668,7 @@
                         <span class="visually-hidden">
                             button favorites
                         </span>
-                        <svg width="22" height="18" viewBox="0 0 22 18">
+                        <svg width="22" height="18" viewcontainer--box="0 0 22 18">
                             <defs>
                                 <style>
                                     .cls-1 {
@@ -673,9 +683,9 @@
                     </button>
                 </div>
 
-            </div>
         </div>
-        <div class="week-product__product-cart container d-flex space-between">
+        </article>
+        <article class="week-product__product-cart container d-flex space-between">
             <div class="one-product d-flex">
                 <div class="one-product__inner">
                     <img class="one-product__img" src="./images/one-product01.png" alt="Mirum Notare Tellus">
@@ -685,9 +695,11 @@
                     <span class="one-product__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</span>
                     <a class="one-product__btn d-flex space-between" href="#">
                         <span>View More</span>
-                        <svg  width="22" height="9" viewBox="0 0 22 9">
-                            <path  fill="#436372"  fill-rule="evenodd" d="M603.3,2616.47h16.948l-0.1,2.86a0.279,0.279,0,0,0-.084.2,0.3,0.3,0,0,0,.084.21l0.172,0.17a0.276,0.276,0,0,0,.408,0l4.192-4.21a0.283,0.283,0,0,0,.084-0.2,0.307,0.307,0,0,0-.084-0.21l-4.192-4.21a0.3,0.3,0,0,0-.408,0l-0.172.17a0.3,0.3,0,0,0-.084.21,0.3,0.3,0,0,0,.084.2l0.113,2.86H603.292a0.3,0.3,0,0,0-.292.3v1.37A0.288,0.288,0,0,0,603.3,2616.47Z" transform="translate(-603 -2611)"/>
-                          </svg>
+                        <svg width="22" height="9" viewcontainer--box="0 0 22 9">
+                            <path fill="#436372" fill-rule="evenodd"
+                                d="M603.3,2616.47h16.948l-0.1,2.86a0.279,0.279,0,0,0-.084.2,0.3,0.3,0,0,0,.084.21l0.172,0.17a0.276,0.276,0,0,0,.408,0l4.192-4.21a0.283,0.283,0,0,0,.084-0.2,0.307,0.307,0,0,0-.084-0.21l-4.192-4.21a0.3,0.3,0,0,0-.408,0l-0.172.17a0.3,0.3,0,0,0-.084.21,0.3,0.3,0,0,0,.084.2l0.113,2.86H603.292a0.3,0.3,0,0,0-.292.3v1.37A0.288,0.288,0,0,0,603.3,2616.47Z"
+                                transform="translate(-603 -2611)" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -701,35 +713,47 @@
                         StreetLightReplacementLEDCornLight</span>
                     <a class="one-product__btn d-flex space-between" href="#">
                         <span>View More</span>
-                        <svg  width="22" height="9" viewBox="0 0 22 9">
-                            <path  fill="#436372"  fill-rule="evenodd" d="M603.3,2616.47h16.948l-0.1,2.86a0.279,0.279,0,0,0-.084.2,0.3,0.3,0,0,0,.084.21l0.172,0.17a0.276,0.276,0,0,0,.408,0l4.192-4.21a0.283,0.283,0,0,0,.084-0.2,0.307,0.307,0,0,0-.084-0.21l-4.192-4.21a0.3,0.3,0,0,0-.408,0l-0.172.17a0.3,0.3,0,0,0-.084.21,0.3,0.3,0,0,0,.084.2l0.113,2.86H603.292a0.3,0.3,0,0,0-.292.3v1.37A0.288,0.288,0,0,0,603.3,2616.47Z" transform="translate(-603 -2611)"/>
-                          </svg>
+                        <svg width="22" height="9" viewcontainer--box="0 0 22 9">
+                            <path fill="#436372" fill-rule="evenodd"
+                                d="M603.3,2616.47h16.948l-0.1,2.86a0.279,0.279,0,0,0-.084.2,0.3,0.3,0,0,0,.084.21l0.172,0.17a0.276,0.276,0,0,0,.408,0l4.192-4.21a0.283,0.283,0,0,0,.084-0.2,0.307,0.307,0,0,0-.084-0.21l-4.192-4.21a0.3,0.3,0,0,0-.408,0l-0.172.17a0.3,0.3,0,0,0-.084.21,0.3,0.3,0,0,0,.084.2l0.113,2.86H603.292a0.3,0.3,0,0,0-.292.3v1.37A0.288,0.288,0,0,0,603.3,2616.47Z"
+                                transform="translate(-603 -2611)" />
+                        </svg>
                     </a>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
     <!-- Week-product finished -->
     <section class="new-design">
         <h2 class="new-design__title">New Design</h2>
         <ul class="control d-flex">
-            <li class="control__item"> <button class="control__btn new-design__btn" type="button" data-filter="all">
-                    <span class="visually-hidden">filters
-                        button all</span> All</button></li>
-            <li class="control__item"> <button class="control__btn new-design__btn" type="button"
-                    data-filter=".category-a"> <span class="visually-hidden">filter button
-                        furnitures</span>Furnitures</button></li>
-            <li class="control__item"> <button class="control__btn new-design__btn" type="button"
-                    data-filter=".category-b"> <span class="visually-hidden">filter button chairs</span>Chairs</button>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter="all">
+                    All
+                </button>
             </li>
-            <li class="control__item"> <button class="control__btn new-design__btn" type="button"
-                    data-filter=".category-c"> <span class="visually-hidden">filter button
-                        lighting</span>Lighting</button></li>
-            <li class="control__item"><button class="control__btn new-design__btn" type="button"
-                    data-filter=".category-d"> <span class="visually-hidden">filter button decor</span>Decor</button>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-a">
+                    Furnitures
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-b">
+                    Chairs
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-c">
+                    Lighting
+                </button>
+            </li>
+            <li class="control__item">
+                <button class="control__btn" type="button" data-filter=".category-d">
+                    Decor
+                </button>
             </li>
         </ul>
-        <div class="new-design__items box">
+        <div class="new-design__items container--box">
             <a class="new-design__link mix category-a" href="#">
                 <img class="new-design__img" src="./images/newdesing01.png" alt="Sofa Beat Flat Pendant Black">
                 <p class="new-design__info">
@@ -787,11 +811,11 @@
     </div>
     <!-- Video finished -->
     <section class="articles">
-        <div class="articles__inner d-flex space-between box">
+        <div class="articles__inner d-flex space-between container--box">
             <h2 class="articles__title">Our Insights & Articles</h2>
             <a class="articles__link" href="#">View All ></a>
         </div>
-        <div class="articles__items d-flex space-between box">
+        <div class="articles__items d-flex space-between container--box">
             <article class="articles__item">
                 <img class="articles__img" src="./images/articles01.jpg" alt="">
                 <span class="articles__news">news</span>
@@ -799,7 +823,7 @@
                     <h3 class="articles__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim veniam</h3>
                     <div class="articles__date-autor">
-                        <span class="articles__date">28 january, 2020</span>
+                        <time datetime="2020-09-28 19:00">28 january, 202</time>
                         <a class="articles__autor" href="#">by admin</a>
                     </div>
                 </div>
@@ -811,7 +835,7 @@
                     <h3 class="articles__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                         et dolore </h3>
                     <div class="articles__date-autor">
-                        <span class="articles__date">28 january, 2020</span>
+                        <time datetime="2020-09-28 19:00">28 january, 202</time>
                         <a class="articles__autor" href="#">by admin</a>
                     </div>
                 </div>
@@ -822,14 +846,14 @@
                 <div class="articles__info">
                     <h3 class="articles__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
                     <div class="articles__date-autor">
-                        <span class="articles__date">28 january, 2020</span>
+                        <time datetime="2020-09-28 19:00">28 january, 202</time>
                         <a class="articles__autor" href="#">by admin</a>
                     </div>
                 </div>
             </article>
         </div>
         <div class="articles__partners">
-            <div class="articles__slider box">
+            <div class="articles__slider container--box">
                 <a class="articles__links" href="#">
                     <img class="articles__partner-logo" src="./images/logo_partner-1.png"
                         alt="Partner Peterson Stephanie">
@@ -865,7 +889,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer box">
+    <footer class="footer container--box">
         <div class="footer__inner d-flex space-between">
             <div class="footer__contact-info">
                 <a class="logo" href="#">
@@ -873,9 +897,9 @@
                 </a>
                 <address class="footer__address">
                     <p class="footer__text">
-                        ADDRESS:4772 Wines Lane Houston, TX77032
-                         <a class="footer__info footer__contact--tel" href="tel:+8323455843">TELEFONE:+832-345-5843</a>
-                         <a class="footer__info" href="mailto:contact@Glee.com">EMAIL:contact@Glee.com</a>
+                        ADDRESS: 4772 Wines Lane Houston, TX77032
+                        <a class="footer__info" href="tel:+8323455843">TELEFONE: +832-345-5843</a>
+                        <a class="footer__info" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
                     </p>
                 </address>
             </div>
@@ -920,7 +944,6 @@
             </ul>
         </div>
     </footer>
-    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

@@ -28,27 +28,12 @@
     font-weight: 400;
 }
 
-%hide-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
 %title {
     font-size: 36px;
     color: rgb(25, 25, 25);
     line-height: 1.2;
     @extend %dms-b;
 
-}
-%uppercase{
-    text-transform: uppercase;
 }
 
 @function max($numbers...){
