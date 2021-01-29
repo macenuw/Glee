@@ -16,24 +16,25 @@
         padding: 3px 10px 5px;
         transition: all .3s;
         border-top: 2px solid transparent;
-    }
 
-    &__link:hover {
-        background-color: $pink-bg;
-        border-radius: 50px;
-    }
 
-    &__link:focus {
-        outline: transparent;
-        border-top: 2px solid black;
-    }
+        &:hover {
+            background-color: $pink-bg;
+            border-radius: 50px;
+        }
 
-    &__link:active {
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+        &:focus {
+            outline: transparent;
+            border-top: 2px solid black;
+        }
 
-    &__link--active {
-        background-color: $pink-bg;
-        border-radius: 50px;
+        &:active {
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &--active {
+            background-color: $pink-bg;
+            border-radius: 50px;
+        }
     }
 }
