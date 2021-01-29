@@ -40,7 +40,7 @@
 
     &__price {
         font-size: 16px;
-        color: #a3bbc8;
+        color: button-color;
         line-height: 1.2;
         margin-bottom: 37px;
     }
@@ -79,7 +79,7 @@
         }
 
         &:hover {
-            background-color: #a3bbc8;
+            background-color: button-color;
 
             path {
                 fill: white;

@@ -101,14 +101,14 @@
         border: none;
         font-size: 14px;
         line-height: 1.2;
-        background-color: #a3bbc8;
+        background-color:$button-color;
         color: white;
         padding: 11px 16px;
         transition: .3s;
         cursor: pointer;
 
         &:hover {
-            color: #a3bbc8;
+            color: $button-color;
             background-color: #334c59;
         }
     }
