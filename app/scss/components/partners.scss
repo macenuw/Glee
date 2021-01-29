@@ -1,11 +1,14 @@
 .partners {
-    padding: 260px 0 140px;
+    padding: 80px 0 90px;
     background-color: #fef7f0;
-    height: 250px;
+    max-height: 250px;
 
     &__slider {
         display: flex;
         justify-content: space-around;
+    }
+    &__links{
+        margin-top: auto;
     }
 
     &__logo {

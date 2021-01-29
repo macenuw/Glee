@@ -8,13 +8,20 @@ body {
     line-height: 1.2;
     @extend %rubik-r;
     color: #243f4d;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 20vh;
 }
 
 .container {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
-    &--box{
+
+    &--box {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
