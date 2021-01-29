@@ -87,24 +87,7 @@
         line-height: 1.2;
         color: #262626;
     }
-
-    &__partners {
-        padding: 260px 0 90px;
-        background-color: #fef7f0;
-        height: 450px;
+    &__partners{
+        width: 450px;
     }
-
-    &__slider {
-
-        .slick-track {
-            width: 1170px;
-            display: flex;
-            justify-content: space-around;
-        }
-    }
-
-    &__links {
-        margin: auto;
-    }
-
 }

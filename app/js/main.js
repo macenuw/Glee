@@ -4,7 +4,7 @@ $(function(){
         arrows: false,
     });
 
-    $('.articles__slider').slick({
+    $('.partners__slider').slick({
         dots: false,
         arrows: false,
         slidesToShow: 5,
