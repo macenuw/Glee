@@ -8,12 +8,6 @@ body {
     line-height: 1.2;
     @extend %rubik-r;
     color: #243f4d;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    min-height: 50vh;
 }
 
 .container {
