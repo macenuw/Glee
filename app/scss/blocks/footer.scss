@@ -99,14 +99,14 @@
         border: none;
         font-size: 14px;
         line-height: 1.2;
-        background-color:$button-color;
+        background-color:$bg-color;
         color: white;
         padding: 11px 16px;
         transition: .3s;
         cursor: pointer;
 
         &:hover {
-            color: $button-color;
+            color: $bg-color;
             background-color: #334c59;
         }
     }
