@@ -1,0 +1,40 @@
+.breadcrumbs {
+    background-color: #edf1f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 0;
+
+    &__title {
+        @extend %rubik-r;
+        color: #222933;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+
+        &+& {
+            margin-left: 20px;
+        }
+
+        &:not(:first-child)::before {
+            content: '/';
+            position: absolute;
+            left: -12px;
+            top: 0;
+        }
+    }
+
+    &__link {
+        color: #737980;
+
+
+    }
+}

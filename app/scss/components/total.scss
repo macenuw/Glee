@@ -1,0 +1,27 @@
+.total {
+    background-color: $pink-bg;
+    padding: 88px 0 80px;
+
+    &__list {
+        justify-content: space-around;
+
+    }
+
+    &__item {
+        background-position: center top;
+        background-repeat: no-repeat;
+        @extend %dms-b;
+        font-size: 36px;
+        color: #243f4d;
+        padding-top: 70px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__item-info {
+        display: block;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
