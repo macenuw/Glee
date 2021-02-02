@@ -57,9 +57,9 @@
         transition: all .5s;
     }
 
-    .search,
-    .cart,
-    .favorites {
+    .s-search,
+    .s-cart,
+    .s-favorites {
         width: 22px;
         height: 20px;
         margin: auto;
@@ -87,9 +87,9 @@
         &:hover {
             background-color: $bg-color;
 
-            .search,
-            .cart,
-            .favorites {
+            .s-search,
+            .s-cart,
+            .s-favorites {
                 fill: white;
 
             }

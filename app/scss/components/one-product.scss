@@ -41,6 +41,13 @@
         margin: 25px 0;
     }
 
+    .s-right-arrow {
+        width: 22px;
+        height: 9px;
+        fill: #436372;
+        transition: .3s
+    }
+
     &__btn {
         @extend %rubik-m;
         font-size: 15px;
@@ -57,7 +64,7 @@
             color: white;
             background-color: #243f4d;
 
-            & path {
+            .s-right-arrow {
                 fill: white;
             }
         }
