@@ -13,6 +13,9 @@ $(function(){
         autoplaySpeed: 2000,
     });
     
+    $('.catalog__range').ionRangeSlider({
+        type: "double",
+    });
     
 
 

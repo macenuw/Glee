@@ -2,9 +2,8 @@
     font-family: "DMSans";
     font-weight: 700;
     font-style: normal;
-    src: local('DMSans-Bold'),
-    url('../fonts/DMSans-Bold.woff2') format('woff2'),
-    url('../fonts/DMSans-Bold.woff') format('woff');
+    src: url('../fonts/DMSans-Bold.woff2') format('woff2'),
+        url('../fonts/DMSans-Bold.woff') format('woff');
     font-display: swap;
 }
 
@@ -12,9 +11,8 @@
     font-family: 'DMSans';
     font-weight: 500;
     font-style: normal;
-    src: local('DMSans-Medium'),
-    url('../fonts/DMSans-Medium.woff2') format('woff2'),
-    url('../fonts/DMSans-Medium.woff') format('woff');
+    src: url('../fonts/DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/DMSans-Medium.woff') format('woff');
     font-display: swap;
 }
 
@@ -22,9 +20,8 @@
     font-family: 'DMSans';
     font-weight: 400;
     font-style: normal;
-    src: local('DMSans-Regular'),
-    url('../fonts/DMSans-Regular.woff2') format('woff2'),
-    url('../fonts/DMSans-Regular.woff') format('woff');
+    src: url('../fonts/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/DMSans-Regular.woff') format('woff');
     font-display: swap;
 }
 
@@ -32,9 +29,8 @@
     font-family: 'Poppins';
     font-weight: 700;
     font-style: normal;
-    src: local('Poppins-Bold'),
-    url('../fonts/Poppins-Bold.woff2') format('woff2'),
-    url('../fonts/Poppins-Bold.woff') format('woff');
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
     font-display: swap;
 }
 
@@ -42,9 +38,8 @@
     font-family: "Rubik";
     font-weight: 500;
     font-style: normal;
-    src: local("Rubik-Medium"),
-    url("../fonts/Rubik-Medium.woff2") format("woff2"),
-    url("../fonts/Rubik-Medium.woff") format("woff");
+    src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+        url("../fonts/Rubik-Medium.woff") format("woff");
     font-display: swap;
 }
 
@@ -52,8 +47,7 @@
     font-family: 'Rubik';
     font-weight: 400;
     font-style: normal;
-    src: local('Rubik-Regular'),
-    url('../fonts/Rubik-Regular.woff2') format('woff2'),
-    url('../fonts/Rubik-Regular.woff') format('woff');
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff');
     font-display: swap;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Glee. Our Contact</title>
+    <title>Glee. Shop Page</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">
+                    <a class="menu__link menu__link--active" href="#">
                         Services
                     </a>
                 </li>
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link--active" href="#">
+                    <a class="menu__link" href="./contact.html">
                         Contact
                     </a>
                 </li>
@@ -67,42 +67,71 @@
     </header>
     <!-- header finished -->
     <main>
-    </main>
-    <div class="partners">
-        <div class="partners__slider container container--box">
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
-            </a>
-        </div>
-    </div>
+        <section class="breadcrumbs">
+            <h2 class="breadcrumbs__title">Shop Page</h2>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Shop Page</a>
+                </li>
+            </ul>
+        </section>
 
+        <section class="catalog d-flex space-between container container--box">
+            <div class="catalog__filters">
+                <div class="catalog__category">
+                    <h3 class="catalog__title"></h3>
+                    <ul class="catalog__list">
+
+                    </ul>
+                </div>
+                <div class="category__price">
+                    <h3 class="catalog__title"></h3>
+                    <input class="catalog__range" type="text" name="my_range" value="" data-min="0" data-max="1000"
+                        data-from="100" data-to="500">
+                </div>
+            </div>
+            <div class="catalog__products"></div>
+            <div class="catalog__pages"></div>
+        </section>
+
+        <div class="partners">
+            <div class="partners__slider container container--box">
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
+                </a>
+            </div>
+        </div>
+    </main>
     <footer class="footer container container--box">
         <div class="footer__inner d-flex space-between">
             <div class="footer__contact-info">

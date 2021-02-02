@@ -57,6 +57,16 @@
         transition: all .5s;
     }
 
+    .search,
+    .cart,
+    .favorites {
+        width: 22px;
+        height: 20px;
+        margin: auto;
+        fill: #a3bbc8;
+
+    }
+
     &__button {
         width: 44px;
         height: 44px;
@@ -66,13 +76,9 @@
         border: 1px solid transparent;
         transition: all .3s;
         cursor: pointer;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
         background-color: #fefefe;
         text-align: center;
         padding-top: 11px;
-
 
         &:focus {
             border: 1px solid gray;
@@ -81,8 +87,11 @@
         &:hover {
             background-color: $bg-color;
 
-            path {
+            .search,
+            .cart,
+            .favorites {
                 fill: white;
+
             }
         }
 

@@ -32,13 +32,16 @@
 
     }
 
+    &__text-inner {
+        max-width: 375px;
+        margin-bottom: 37px;
+    }
+
     &__text {
         @extend %rubik-r;
         font-size: 18px;
         line-height: 1.7;
-        max-width: 375px;
         color: #436372;
-        margin-bottom: 37px;
         margin-left: 1px;
     }
 
@@ -53,8 +56,11 @@
         align-items: center;
         transition: all .5s;
 
+        & path {
+            transition: .3s;
+        }
+
         &:hover {
-            letter-spacing: 1px;
             background-image: url('../images/cart.svg');
             background-position: center;
             background-repeat: no-repeat;
@@ -64,6 +70,15 @@
             & path {
                 fill: transparent;
             }
+        }
+
+        &:focus {
+            outline: transparent;
+            background-color: #436372;
+        }
+
+        &:active {
+            box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
         }
     }
 
