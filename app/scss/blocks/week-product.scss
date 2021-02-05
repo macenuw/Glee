@@ -12,5 +12,24 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px 30px;
         margin-bottom: 185px;
+
+        @media(max-width:$md) {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0;
+            grid-gap: 20px 10px;
+        }
+
+        @media(max-width:$vs) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+
+    &__product-cart {
+        @media(max-width:$lg) {
+            justify-content: center;
+            flex-direction: column;
+
+        }
     }
 }

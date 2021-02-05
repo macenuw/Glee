@@ -4,10 +4,12 @@
 @import'global/libs';
 @import'global/global';
 // components
+@import'./components/all-svg.scss';
 @import'./components/menu.scss';
 @import'./components/control.scss';
 @import'./components/product-card.scss';
 @import'./components/one-product.scss';
+@import'./components/product-promotion.scss';
 @import'./components/video.scss';
 @import'./components/partners.scss';
 @import'./components/total.scss';

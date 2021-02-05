@@ -3,7 +3,15 @@
     width: 49%;
     height: 390px;
     justify-content: space-around;
-    padding: 80px 0 100px;
+    padding: 80px 10px 100px;
+
+    @media(max-width:$lg) {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 60px;
+
+
+    }
 
     &__inner {
         width: 40%;
@@ -13,6 +21,11 @@
         height: 400px;
         margin-left: auto;
         margin-top: -185px;
+
+        @media(max-width:$md) {
+            height: 350px;
+            margin-top: -120px;
+        }
     }
 
     &__info {
@@ -39,11 +52,14 @@
         display: block;
         color: #243f4d;
         margin: 25px 0;
+
+        @media(max-width:$sm) {
+            font-size: 12px;
+
+        }
     }
 
     .s-right-arrow {
-        width: 22px;
-        height: 9px;
         fill: #436372;
         transition: .3s
     }
@@ -67,6 +83,11 @@
             .s-right-arrow {
                 fill: white;
             }
+        }
+
+        @media(max-width:$vs) {
+            width: 140px;
+
         }
     }
 }

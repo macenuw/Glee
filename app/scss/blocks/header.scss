@@ -1,17 +1,120 @@
 .header {
     padding-top: 48px;
     margin-bottom: 45px;
+    position: relative;
+
+
 
     &__navigation {
         align-items: center;
+
+        @media(max-width:$lg) {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    &__menu-btn {
+        display: none;
+
+        @media(max-width:$sm) {
+            background-color: transparent;
+            color: black;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 74px;
+            height: 36px;
+            font-size: 0;
+            text-indent: -9999px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            box-shadow: none;
+            border: none;
+            border-radius: none;
+            cursor: pointer;
+            -webkit-transition: background 0.3s;
+            transition: background 0.3s;
+            top: 0;
+
+            &:focus {
+                outline: transparent;
+            }
+
+        }
+
+        &.is-active .header__menu-span {
+            background: none;
+
+            &::before,
+            &::after {
+                background-color: black;
+                transition-delay: 0s, 0.3s;
+            }
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__menu-span {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        right: 18px;
+        height: 3px;
+        background: black;
+
+        &::before,
+        &::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            content: "";
+            transition: 0.3s;
+        }
+
+        &::before {
+            top: -9px;
+            transition-property: top, transform;
+        }
+
+        &::after {
+            bottom: -9px;
+            transition-property: bottom, transform;
+        }
     }
 
     &__menu {
         margin-left: 154px;
+
+        @media(max-width:$lg) {
+            margin-left: auto;
+        }
     }
 
     &__user {
         padding: 2px;
+
+        @media(max-width:$lg) {
+            width: 100%;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
     }
 
     &__search {
@@ -20,12 +123,12 @@
         padding: 18px;
         background-color: #edf1f4;
         border-radius: 50%;
-        background-image: url('../images/icon.svg');
+        background-image: url('../images/header/icon.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 30%;
         border: none;
-        margin-right: 21px;
+        margin-right: 41px;
         cursor: pointer;
         transition: all .3s;
 
@@ -42,24 +145,53 @@
         &:active {
             box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.75);
         }
+
+        @media(max-width:$vs) {
+            margin-right: auto;
+        }
     }
 
     &__desires {
         background-color: $pink-bg;
-        padding: 9px 13px;
-        border-radius: 50px;
-        margin-right: 18px;
+        padding: 9px 0;
+        margin-right: 42px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 50px;
+            top: 0;
+            left: -20px;
+            border-radius: 50px 0 0 50px;
+            background-color: $pink-bg;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 50px;
+            top: 0;
+            right: -20px;
+            border-radius: 0 50px 50px 0;
+            background-color: $pink-bg;
+        }
+
+        @media(max-width:$vs) {
+            margin-right: auto;
+        }
+
     }
 
     &__favorites {
-        background-image: url('../images/like.svg');
+        background-image: url('../images/header/like.svg');
         background-position: center center;
         background-repeat: no-repeat;
-        background-position-y: 13px;
-        background-position-x: 28px;
-        padding: 13px 38px 2px;
+        padding: 13px 65px 2px 0;
         position: relative;
-        transition: all .5s;
+        transition: all .3s;
         border-radius: 50px 0 0 50px;
 
         &:hover {
@@ -68,11 +200,11 @@
             background-size: 45%;
 
             & .header__number {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
                 line-height: 20px;
-                top: 6px;
-                right: 28px;
+                top: 4px;
+                right: 21px;
             }
         }
 
@@ -87,16 +219,15 @@
     }
 
     &__cart {
-        background-image: url('../images/cart.svg');
+        background-image: url('../images/header/cart.svg');
         background-position: center center;
         background-repeat: no-repeat;
-        background-position-y: 13px;
-        background-position-x: 27px;
-        padding: 13px 38px 2px;
+        padding: 13px 0 2px 65px;
         border-left: 1px solid #fde7d3;
         position: relative;
-        transition: all .7s;
+        transition: all .3s;
         border-radius: 0 50px 50px 0;
+        z-index: 3;
 
         &:hover {
             background-position-y: 0;
@@ -105,11 +236,11 @@
             outline: transparent;
 
             & .header__number {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
                 line-height: 20px;
-                top: -2px;
-                right: 26px;
+                top: -6px;
+                right: 19px;
             }
         }
 
@@ -133,8 +264,8 @@
         text-align: center;
         border-radius: 50%;
         position: absolute;
-        top: 5px;
-        right: 21px;
+        top: 0;
+        right: 15px;
         @extend %dms-r;
         transition: all .5s;
     }
@@ -144,7 +275,7 @@
         height: 50px;
         border-radius: 50%;
         background-color: $bg-color;
-        background-image: url('../images/user-menu.svg');
+        background-image: url('../images/header/user-menu.svg');
         background-position: center center;
         background-repeat: no-repeat;
         border: none;

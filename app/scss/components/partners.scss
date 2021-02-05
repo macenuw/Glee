@@ -3,6 +3,11 @@
     background-color: #fef7f0;
     max-height: 250px;
 
+    @media(max-width:$sm) {
+        display: none;
+
+    }
+
     &__slider {
         display: flex;
         justify-content: space-around;

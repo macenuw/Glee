@@ -1,6 +1,10 @@
 .new-design {
     padding: 100px 0 0;
 
+    @media(max-width:$lg) {
+        padding: 0;
+    }
+
     &__title {
         @extend %title;
         margin-bottom: 35px;
@@ -13,35 +17,9 @@
         grid-gap: 35px 30px;
         margin-bottom: 120px;
 
-    }
-
-    &__link {
-        position: relative;
-        border: 1px solid transparent;
-        transition: border-color .3s;
-
-        &:hover {
-            border-color: $title-color;
+        @media(max-width:$sm) {
+            grid-template-columns: repeat(2, 1fr)
         }
-    }
 
-    &__info {
-        @extend %dms-b;
-        position: absolute;
-        top: 35px;
-        left: 35px;
-        max-width: 195px;
-    }
-    &__subtitle{
-         font-size: 20px;
-         color: $title-color;
-    }
-
-    &__text {
-        font-size: 16px;
-        line-height: 1.2;
-        color: $bg-color;
-        display: block;
-        margin-top: 15px;
     }
 }
