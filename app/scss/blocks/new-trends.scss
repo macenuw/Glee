@@ -1,4 +1,8 @@
 .new-trends {
+    @media(max-width:$lg) {
+        padding: 0;
+    }
+
     &__slider {
         background-color: $pink-bg;
         background-repeat: no-repeat;
@@ -205,7 +209,7 @@
         color: #636362;
 
         @media(max-width:$sm) {
-           line-height: 1.2;
+            line-height: 1.2;
         }
     }
 }
