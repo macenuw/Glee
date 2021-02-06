@@ -3,8 +3,6 @@
     margin-bottom: 45px;
     position: relative;
 
-
-
     &__navigation {
         align-items: center;
 
@@ -117,20 +115,35 @@
         }
     }
 
-    &__search {
+    &__btn {
         height: 50px;
         width: 50px;
-        padding: 18px;
-        background-color: #edf1f4;
         border-radius: 50%;
-        background-image: url('../images/header/icon.svg');
+        cursor: pointer;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: 30%;
-        border: none;
-        margin-right: 41px;
-        cursor: pointer;
         transition: all .3s;
+        border: none;
+    }
+
+    &__link {
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        transition: all .3s;
+
+        &:not(:first-child) {
+            border-left: 1px solid #fde7d3;
+        }
+    }
+
+    &__search {
+        padding: 18px;
+        background-color: #edf1f4;
+        background-image: url('../images/header/icon.svg');
+        background-size: 30%;
+        margin-right: 41px;
+
 
         &:hover {
             background-color: $bg-color;
@@ -187,11 +200,7 @@
 
     &__favorites {
         background-image: url('../images/header/like.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
         padding: 13px 65px 2px 0;
-        position: relative;
-        transition: all .3s;
         border-radius: 50px 0 0 50px;
 
         &:hover {
@@ -220,12 +229,7 @@
 
     &__cart {
         background-image: url('../images/header/cart.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
         padding: 13px 0 2px 65px;
-        border-left: 1px solid #fde7d3;
-        position: relative;
-        transition: all .3s;
         border-radius: 0 50px 50px 0;
         z-index: 3;
 
@@ -271,16 +275,8 @@
     }
 
     &__user-menu {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
         background-color: $bg-color;
         background-image: url('../images/header/user-menu.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        border: none;
-        cursor: pointer;
-        transition: all .3s;
 
         &:hover {
             background-color: #74858e;

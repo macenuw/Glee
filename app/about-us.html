@@ -15,18 +15,19 @@
             <a class="logo" href="#">
                 <img src="./images/Glee.png" alt="">
             </a>
+
             <button class="header__menu-btn">
                 <span class="header__menu-span">menu toggle</span>
             </button>
 
             <ul class="menu header__menu d-flex">
                 <li class="menu__item">
-                    <a class="menu__link" href="./index.html">
+                    <a class="menu__link menu__link--active" href="#">
                         Home +
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link--active" href="#">
+                    <a class="menu__link" href="./about-us.html">
                         About
                     </a>
                 </li>
@@ -53,19 +54,23 @@
             </ul>
 
             <div class="header__user d-flex">
-                <button class="header__search" type="button">
+                <button class="header__search header__btn" type="button">
                     <span class="visually-hidden">search</span></button>
                 <div class="header__desires d-flex">
                     <a class="header__favorites" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">favorites</span></a>
+                        <span class="visually-hidden">favorites</span>
+                    </a>
                     <a class="header__cart" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">cart</span></a>
+                        <span class="visually-hidden">cart</span>
+                    </a>
                 </div>
-                <button class="header__user-menu" type="button">
-                    <span class="visually-hidden">user menu</span></button>
+                <button class="header__user-menu header__btn" type="button">
+                    <span class="visually-hidden">user menu</span>
+                </button>
             </div>
+
         </nav>
     </header>
     <!-- header finished -->
@@ -196,46 +201,49 @@
             <a class="articles__link" href="#">View All ></a>
         </div>
         <div class="articles__items d-flex space-between container container--box">
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles01.jpg" alt="new design bedroom"></a>
-                <span class="articles__news">news</span>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles01.jpg" alt="new design bedroom"></a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim
                             ad minim veniam</h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor" href="#">by admin</span>
                     </div>
                 </div>
             </article>
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles02.jpg"
-                        alt="new option design living room"></a>
-                <span class="articles__news">news</span>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles02.jpg"
+                        alt="new option design living room">
+                </a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             laboreet dolore </h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor" href="#">by admin</span>
                     </div>
                 </div>
             </article>
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles03.jpg"
-                        alt="new option design living room"></a>
-                <span class="articles__news">news</span>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
+
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles03.jpg"
+                        alt="new option design living room">
+                    <span class="new-article__news">news</span></a>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor" href="#">by admin</span>
                     </div>
                 </div>
             </article>
@@ -277,6 +285,7 @@
             </div>
         </div>
     </section>
+
 
     <footer class="footer container container--box">
         <div class="footer__inner d-flex space-between">

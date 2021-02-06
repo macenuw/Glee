@@ -1,5 +1,5 @@
 .new-design {
-    padding: 100px 0 0;
+    padding: 95px 0 0;
 
     @media(max-width:$lg) {
         padding: 0;
@@ -7,15 +7,15 @@
 
     &__title {
         @extend %title;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 35px 30px;
-        margin-bottom: 120px;
+        grid-gap: 30px 30px;
+        margin-bottom: 118px;
 
         @media(max-width:$sm) {
             grid-template-columns: repeat(2, 1fr)

@@ -21,13 +21,13 @@ $(function () {
         type: "double",
     });
 
-    const menuBtn = document.querySelector('.header__menu-btn');
+    var menuBtn = document.querySelector('.header__menu-btn');
     menuBtn.addEventListener('click', function () {
         this.classList.contains("is-active") === true ? this.classList.remove("is-active") : this.classList.add("is-active");
-    })
+    });
 
     $('.menu__link').on('click', function () {
-        $('.header__menu-btn').classList.remove('is-active');
+        $('.header__menu-btn').removeClass('is-active');
     });
 
     var mixer1 = mixitup('.week-product__items', {

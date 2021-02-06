@@ -5,10 +5,18 @@
 
     &__slider {
         background-color: $pink-bg;
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-position-x: 85%;
-        background-position-y: 100px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 634px;
+            height: 634px;
+            border-radius: 50%;
+            background: linear-gradient(to left, white, transparent);
+            position: absolute;
+            top: 8%;
+            right: 7%;
+        }
     }
 
     &__item {
@@ -28,7 +36,7 @@
         padding: 215px 0 206px;
 
         @media(max-width:$lg) {
-            padding: 50px 0 50px;
+            padding: 100px 0 100px;
         }
     }
 
@@ -71,8 +79,6 @@
     }
 
     .s-right-arrow {
-        width: 22px;
-        height: 9px;
         fill: white;
         transition: .3s;
     }
@@ -156,9 +162,13 @@
         background-color: #fef7f0;
     }
 
+    &__icon {
+        justify-content: center;
+    }
+
     .s-icon {
-        margin: auto;
         fill: #a3bbc8;
+        margin-bottom: auto;
 
     }
 

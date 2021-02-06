@@ -54,25 +54,28 @@
             </ul>
 
             <div class="header__user d-flex">
-                <button class="header__search" type="button">
+                <button class="header__search header__btn" type="button">
                     <span class="visually-hidden">search</span></button>
                 <div class="header__desires d-flex">
-                    <a class="header__favorites" href="#">
+                    <a class="header__favorites header__link" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">favorites</span></a>
-                    <a class="header__cart" href="#">
+                        <span class="visually-hidden">favorites</span>
+                    </a>
+                    <a class="header__cart header__link" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">cart</span></a>
+                        <span class="visually-hidden">cart</span>
+                    </a>
                 </div>
-                <button class="header__user-menu" type="button">
-                    <span class="visually-hidden">user menu</span></button>
+                <button class="header__user-menu header__btn" type="button">
+                    <span class="visually-hidden">user menu</span>
+                </button>
             </div>
 
         </nav>
     </header>
     <!-- header finished -->
     <section class="new-trends container">
-        <div class="new-trends__slider" style="background-image: url('./images/new-trends/ellipse.png');">
+        <div class="new-trends__slider">
             <div class="new-trends__item">
                 <div class="new-trends__inner d-flex space-between container container--box">
                     <div class="new-trends__content">
@@ -482,8 +485,8 @@
                     </button>
                 </div>
 
+            </article>
         </div>
-        </article>
         <div class="week-product__product-cart container d-flex space-between">
             <article class="one-product d-flex">
                 <div class="one-product__inner">
@@ -509,7 +512,8 @@
                 <div class="one-product__info">
                     <h3 class="one-product__title">Malesuada Tempor Eulsmod</h3>
                     <span class="one-product__text">50W 8000lm Compact Size for HID
-                        StreetLightReplacement LEDCornLight</span>
+                        StreetLightReplacement LEDCornLight
+                    </span>
                     <a class="one-product__btn d-flex space-between" href="#">
                         <span>View More</span>
                         <svg class="s-right-arrow">
@@ -518,6 +522,7 @@
                     </a>
                 </div>
             </article>
+        </div>
         </div>
     </section>
     <!-- Week-product finished -->
@@ -561,10 +566,10 @@
                     <span class="product-promotion__text">Classic</span>
                 </div>
             </article>
-            <article class="product-promotion mix category-a category-c"">
+            <article class="product-promotion mix category-a category-c">
                 <a class=" product-promotion__link" href="#">
-                <img class=" product-promotion__img" src="./images/new-design/newdesing02.png"
-                    alt="Bed Lampe Sur Pieds Bamboo">
+                    <img class=" product-promotion__img" src="./images/new-design/newdesing02.png"
+                        alt="Bed Lampe Sur Pieds Bamboo">
                 </a>
                 <div class="product-promotion__info">
                     <h3 class="product-promotion__subtitle">Lampe Sur Pieds Bamboo</h3>
@@ -631,46 +636,49 @@
             <a class="articles__link" href="#">View All ></a>
         </div>
         <div class="articles__items d-flex space-between container container--box">
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles01.jpg" alt="new design bedroom"></a>
-                <span class="articles__news">news</span>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            <article class="new-article">
+                <a class="new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles01.jpg" alt="new design bedroom"></a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim
                             ad minim veniam</h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor">by admin</span>
                     </div>
                 </div>
             </article>
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles02.jpg"
-                        alt="new option design living room"></a>
-                <span class="articles__news">news</span>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            <article class="new-article">
+                <a class="new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles02.jpg"
+                        alt="new option design living room">
+                </a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             laboreet dolore </h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor">by admin</span>
                     </div>
                 </div>
             </article>
-            <article class="articles__item">
-                <a class="article__link" href="#">
-                    <img class="articles__img" src="./images/articles/articles03.jpg"
+
+            <article class="new-article">
+                <a class="new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles03.jpg"
                         alt="new option design living room">
-                    <span class="articles__news">news</span></a>
-                <div class="articles__info"> <a class="article__link" href="#">
-                        <h3 class="articles__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
+                    <span class="new-article__news">news</span></a>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
                     </a>
-                    <div class="articles__date-autor">
+                    <div class="new-article__date-autor">
                         <time datetime="2020-09-28 19:00">28 january, 2020</time>
-                        <span class="articles__autor" href="#">by admin</span>
+                        <span class="new-article__autor">by admin</span>
                     </div>
                 </div>
             </article>

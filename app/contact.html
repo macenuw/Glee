@@ -16,9 +16,13 @@
                 <img src="./images/Glee.png" alt="">
             </a>
 
+            <button class="header__menu-btn">
+                <span class="header__menu-span">menu toggle</span>
+            </button>
+
             <ul class="menu header__menu d-flex">
                 <li class="menu__item">
-                    <a class="menu__link" href="./index.html">
+                    <a class="menu__link menu__link--active" href="#">
                         Home +
                     </a>
                 </li>
@@ -43,7 +47,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link--active" href="#">
+                    <a class="menu__link" href="./contact.html">
                         Contact
                     </a>
                 </li>
@@ -55,55 +59,114 @@
                 <div class="header__desires d-flex">
                     <a class="header__favorites" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">favorites</span></a>
+                        <span class="visually-hidden">favorites</span>
+                    </a>
                     <a class="header__cart" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">cart</span></a>
+                        <span class="visually-hidden">cart</span>
+                    </a>
                 </div>
                 <button class="header__user-menu" type="button">
-                    <span class="visually-hidden">user menu</span></button>
+                    <span class="visually-hidden">user menu</span>
+                </button>
             </div>
+
         </nav>
     </header>
     <!-- header finished -->
     <main>
     </main>
-    <div class="partners">
-        <div class="partners__slider container container--box">
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-1.png"
-                    alt="Partner Peterson Stephanie">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-1.png"
-                    alt="Partner Peterson Stephanie">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
-            </a>
-            <a class="partners__links" href="#">
-                <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
-            </a>
+    <section class="articles">
+        <div class="articles__inner d-flex space-between container container--box">
+            <h2 class="articles__title">Our Insights & Articles</h2>
+            <a class="articles__link" href="#">View All ></a>
         </div>
-    </div>
+        <div class="articles__items d-flex space-between container container--box">
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles01.jpg" alt="new design bedroom"></a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim
+                            ad minim veniam</h3>
+                    </a>
+                    <div class="new-article__date-autor">
+                        <time datetime="2020-09-28 19:00">28 january, 2020</time>
+                        <span class="new-article__autor" href="#">by admin</span>
+                    </div>
+                </div>
+            </article>
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles02.jpg"
+                        alt="new option design living room">
+                </a>
+                <span class="new-article__news">news</span>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            laboreet dolore </h3>
+                    </a>
+                    <div class="new-article__date-autor">
+                        <time datetime="2020-09-28 19:00">28 january, 2020</time>
+                        <span class="new-article__autor" href="#">by admin</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="new-article">
+                <a class=new-article__link" href="#">
+                    <img class="new-article__img" src="./images/articles/articles03.jpg"
+                        alt="new option design living room">
+                    <span class="new-article__news">news</span></a>
+                <div class="new-article__info"> <a class="new-article__link" href="#">
+                        <h3 class="new-article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </h3>
+                    </a>
+                    <div class="new-article__date-autor">
+                        <time datetime="2020-09-28 19:00">28 january, 2020</time>
+                        <span class="new-article__autor" href="#">by admin</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="partners articles__partners">
+            <div class="partners__slider container container--box">
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-1.png"
+                        alt="Partner Peterson Stephanie">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-1.png"
+                        alt="Partner Peterson Stephanie">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
+                </a>
+                <a class="partners__links" href="#">
+                    <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="footer container container--box">
         <div class="footer__inner d-flex space-between">
