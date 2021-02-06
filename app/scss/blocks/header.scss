@@ -137,7 +137,7 @@
         }
     }
 
-    &__search {
+    &__btn--search {
         padding: 18px;
         background-color: #edf1f4;
         background-image: url('../images/header/icon.svg');
@@ -198,7 +198,7 @@
 
     }
 
-    &__favorites {
+    &__link--favorites {
         background-image: url('../images/header/like.svg');
         padding: 13px 65px 2px 0;
         border-radius: 50px 0 0 50px;
@@ -227,7 +227,7 @@
         }
     }
 
-    &__cart {
+    &__link--cart {
         background-image: url('../images/header/cart.svg');
         padding: 13px 0 2px 65px;
         border-radius: 0 50px 50px 0;
@@ -274,7 +274,7 @@
         transition: all .5s;
     }
 
-    &__user-menu {
+    &__btn--user-menu {
         background-color: $bg-color;
         background-image: url('../images/header/user-menu.svg');
 
