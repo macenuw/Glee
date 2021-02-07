@@ -98,6 +98,10 @@
         text-align: center;
         padding-top: 11px;
 
+        &:focus {
+            border: 1px solid gray;
+        }
+
         &:hover {
             background-color: $bg-color;
 
@@ -109,9 +113,7 @@
             }
         }
 
-        &:focus {
-            border: 1px solid gray;
-        }
+
 
         &--search {
             &:active {

@@ -144,15 +144,14 @@
         background-size: 30%;
         margin-right: 41px;
 
+        &:focus {
+            outline: transparent;
+            border-left: 1px solid black;
+        }
 
         &:hover {
             background-color: $bg-color;
             background-size: 60%;
-        }
-
-        &:focus {
-            outline: transparent;
-            border-left: 1px solid black;
         }
 
         &:active {
@@ -203,6 +202,11 @@
         padding: 13px 65px 2px 0;
         border-radius: 50px 0 0 50px;
 
+        &:focus {
+            outline: transparent;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
         &:hover {
             background-position-y: 0;
             background-position-x: 20px;
@@ -217,11 +221,6 @@
             }
         }
 
-        &:focus {
-            outline: transparent;
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-
         &:active {
             box-shadow: inset 5px 0px 2px rgba(0, 0, 0, 0.75);
         }
@@ -232,6 +231,11 @@
         padding: 13px 0 2px 65px;
         border-radius: 0 50px 50px 0;
         z-index: 3;
+
+        &:focus {
+            outline: transparent;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
 
         &:hover {
             background-position-y: 0;
@@ -246,11 +250,6 @@
                 top: -6px;
                 right: 19px;
             }
-        }
-
-        &:focus {
-            outline: transparent;
-            background-color: rgba(0, 0, 0, 0.05);
         }
 
         &:active {
@@ -278,13 +277,13 @@
         background-color: $bg-color;
         background-image: url('../images/header/user-menu.svg');
 
-        &:hover {
-            background-color: #74858e;
-        }
-
         &:focus {
             outline: transparent;
             border-right: 1px solid black;
+        }
+
+        &:hover {
+            background-color: #74858e;
         }
 
         &:active {

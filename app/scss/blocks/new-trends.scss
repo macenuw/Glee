@@ -94,6 +94,11 @@
         align-items: center;
         transition: all .5s;
 
+        &:focus {
+            outline: transparent;
+            background-color: #436372;
+        }
+
         &:hover {
             background-image: url('../images/header/cart.svg');
             background-position: center;
@@ -106,10 +111,7 @@
             }
         }
 
-        &:focus {
-            outline: transparent;
-            background-color: #436372;
-        }
+
 
         &:active {
             box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
