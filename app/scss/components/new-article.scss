@@ -6,12 +6,9 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     position: relative;
 
-    @media(max-width:$lg) {
-        margin: 30px 0;
-
+    @media(max-width: $lg) {
+        margin: 30px;
     }
-
-
 
     &__news {
         @extend %dms-b;
@@ -28,16 +25,14 @@
         bottom: 155px;
         transition: .3s;
 
-        @media(max-width:$vs) {
+        @media(max-width: $vs) {
             display: none;
-
         }
 
     }
 
     &__info {
         padding: 35px 27px 25px;
-
     }
 
     &__text {

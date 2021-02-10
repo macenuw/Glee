@@ -14,9 +14,8 @@
         padding: 5px 10px;
         cursor: pointer;
 
-        @media(max-width:$vs) {
+        @media(max-width: $vs) {
             font-size: 12px;
-
         }
 
         &:focus {

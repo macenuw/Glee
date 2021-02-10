@@ -1,7 +1,7 @@
 .menu {
     transition: .3s;
 
-    @media(max-width:$sm) {
+    @media(max-width: $sm) {
         position: absolute;
         transform: translateX(-200%);
         top: 160px;
@@ -27,7 +27,7 @@
             margin-right: 12px;
         }
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             width: 100%;
             text-align: center;
             margin: auto;

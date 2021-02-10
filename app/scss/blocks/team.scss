@@ -2,12 +2,12 @@
     padding-top: 120px;
     padding-bottom: 60px;
 
-    @media(max-width:$md) {
+    @media(max-width: $md) {
         flex-direction: column;
     }
 
     &__info {
-        @media(max-width:$md) {
+        @media(max-width: $md) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,7 +20,6 @@
         @extend %dms-b;
         font-size: 36px;
         margin-bottom: 35px;
-
     }
 
     &__text {
@@ -30,9 +29,8 @@
         max-width: 300px;
         margin-bottom: 45px;
 
-        @media(max-width:$md) {
+        @media(max-width: $md) {
             max-width: 100%;
-
         }
     }
 
@@ -53,7 +51,7 @@
             background-color: #436372;
         }
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             margin-left: auto;
         }
     }
@@ -63,7 +61,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 100px 30px;
 
-        @media(max-width:$vs) {
+        @media(max-width: $vs) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -71,7 +69,7 @@
     &__foto {
         position: relative;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             margin: auto;
         }
     }
@@ -85,7 +83,7 @@
         justify-content: space-around;
         padding: 27px 25px;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             padding: 15px;
         }
     }
@@ -94,7 +92,7 @@
         margin-right: 40px;
         padding-left: 5px;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
 
             margin-right: 10px;
         }
@@ -107,7 +105,7 @@
         margin-bottom: 10px;
         color: #436372;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             font-size: 16px;
         }
     }
@@ -118,7 +116,7 @@
         color: #565872;
         display: block;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             font-size: 12px;
         }
     }
@@ -127,7 +125,6 @@
         margin: auto;
         justify-content: space-around;
         align-items: center;
-
     }
 
     &__instagram {

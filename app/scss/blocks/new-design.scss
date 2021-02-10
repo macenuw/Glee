@@ -1,7 +1,7 @@
 .new-design {
     padding: 95px 0 0;
 
-    @media(max-width:$lg) {
+    @media(max-width: $lg) {
         padding: 0;
     }
 
@@ -17,8 +17,12 @@
         grid-gap: 30px 30px;
         margin-bottom: 118px;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             grid-template-columns: repeat(2, 1fr)
+        }
+
+        @media(max-width: $vs) {
+            grid-template-columns: repeat(1, 1fr)
         }
 
     }

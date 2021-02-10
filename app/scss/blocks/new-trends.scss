@@ -1,5 +1,5 @@
 .new-trends {
-    @media(max-width:$lg) {
+    @media(max-width: $lg) {
         padding: 0;
     }
 
@@ -16,6 +16,10 @@
             position: absolute;
             top: 8%;
             right: 7%;
+
+            @media(max-width: $md) {
+                display: none;
+            }
         }
     }
 
@@ -26,16 +30,17 @@
     &__inner {
         align-items: center;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             flex-direction: column;
             justify-content: center;
+            margin-bottom: 45px;
         }
     }
 
     &__content {
         padding: 215px 0 206px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             padding: 100px 0 100px;
         }
     }
@@ -50,12 +55,12 @@
         margin-left: 0px;
         text-transform: uppercase;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             max-width: 100%;
             text-align: center;
         }
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             font-size: 42px;
         }
 
@@ -65,7 +70,7 @@
         max-width: 375px;
         margin-bottom: 37px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             max-width: 100%;
         }
     }
@@ -111,13 +116,11 @@
             }
         }
 
-
-
         &:active {
             box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
         }
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             margin: 0 auto;
         }
     }
@@ -162,6 +165,10 @@
     &__info {
         justify-content: space-around;
         background-color: #fef7f0;
+
+        @media(max-width:$vs) {
+            display: block;
+        }
     }
 
     &__icon {
@@ -179,14 +186,20 @@
         justify-content: center;
         padding: 45px 0;
 
-        &:not(:last-child) {
-            border-right: 1px solid #e8e4df;
+
+        @media(max-width: $sm) {
+            flex-direction: column;
+            padding: 10px;
         }
 
-        @media(max-width:$sm) {
-            flex-direction: column;
-            padding: 10px 0;
+        &:not(:last-child) {
+            border-right: 1px solid #e8e4df;
+
+            @media(max-width: $sm) {
+                border-bottom: 1px solid #e8e4df;
+            }
         }
+
     }
 
     &__info-text {
@@ -197,7 +210,7 @@
         flex-direction: column;
         justify-content: center;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             text-align: center;
             padding-left: 0;
             margin: 0 auto;
@@ -220,7 +233,7 @@
         display: block;
         color: #636362;
 
-        @media(max-width:$sm) {
+        @media(max-width: $sm) {
             line-height: 1.2;
         }
     }

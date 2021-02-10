@@ -2,10 +2,9 @@
     &__inner {
         padding: 80px 0 70px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             flex-wrap: wrap;
             justify-content: space-around;
-
         }
     }
 
@@ -13,10 +12,14 @@
         width: 300px;
         font-style: normal;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             width: 220px;
             text-align: center;
 
+        }
+
+        @media(max-width: $vs) {
+            max-width: 200px;
         }
 
     }
@@ -39,7 +42,6 @@
 
         &:hover {
             color: #234969;
-
         }
     }
 
@@ -51,7 +53,7 @@
     &__service {
         width: 300px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             width: 220px;
             text-align: center;
         }
@@ -89,7 +91,7 @@
     &__account {
         width: 300px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             width: 220px;
             text-align: center;
         }
@@ -98,7 +100,7 @@
     &__newsletter {
         max-width: 270px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             width: 220px;
             text-align: center;
         }
@@ -153,10 +155,9 @@
         border-top: 1px solid #dae4e9;
         padding: 35px 0;
 
-        @media(max-width:$vs) {
+        @media(max-width: $sm) {
             justify-content: center;
             flex-wrap: wrap;
-
         }
     }
 
@@ -166,8 +167,16 @@
         line-height: 1.2;
         color: #a7a7a7;
 
-        @media(max-width:$vs) {
-            margin-bottom: 30px;
+        @media(max-width: $sm) {
+            padding-top: 15px;
+
+        }
+
+    }
+
+    &__list {
+        @media(max-width: $sm) {
+            padding-top: 15px;
 
         }
     }

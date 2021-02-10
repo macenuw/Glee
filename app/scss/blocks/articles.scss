@@ -3,10 +3,19 @@
 
     &__inner {
         padding-bottom: 45px;
+
+        @media(max-width: $vs) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__title {
         @extend %title;
+
+        @media(max-width: $vs) {
+            margin-bottom: 40px;
+        }
     }
 
     &__link {
@@ -21,20 +30,18 @@
     &__items {
         margin-bottom: -169px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             margin-bottom: 30px;
             flex-wrap: wrap;
             justify-content: space-around;
-
         }
     }
 
     &__partners {
         padding: 260px 0 150px;
 
-        @media(max-width:$lg) {
+        @media(max-width: $lg) {
             padding: 80px 0 60px;
-
         }
     }
 }
