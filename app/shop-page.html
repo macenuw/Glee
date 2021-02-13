@@ -16,9 +16,13 @@
                 <img src="./images/Glee.png" alt="">
             </a>
 
+            <button class="header__menu-btn">
+                <span class="header__menu-span">menu toggle</span>
+            </button>
+
             <ul class="menu header__menu d-flex">
                 <li class="menu__item">
-                    <a class="menu__link" href="./index.html">
+                    <a class="menu__link menu__link--active" href="./index.html">
                         Home +
                     </a>
                 </li>
@@ -28,7 +32,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link--active" href="#">
+                    <a class="menu__link" href="#">
                         Services
                     </a>
                 </li>
@@ -48,20 +52,23 @@
                     </a>
                 </li>
             </ul>
-
             <div class="header__user d-flex">
-                <button class="header__search" type="button">
-                    <span class="visually-hidden">search</span></button>
+                <button class="header__btn header__btn--search" type="button">
+                    <span class="visually-hidden">search</span>
+                </button>
                 <div class="header__desires d-flex">
-                    <a class="header__favorites" href="#">
+                    <a class="header__link header__link--favorites" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">favorites</span></a>
-                    <a class="header__cart" href="#">
+                        <span class="visually-hidden">favorites</span>
+                    </a>
+                    <a class="header__link header__link--cart" href="#">
                         <span class="header__number">0</span>
-                        <span class="visually-hidden">cart</span></a>
+                        <span class="visually-hidden">cart</span>
+                    </a>
                 </div>
-                <button class="header__user-menu" type="button">
-                    <span class="visually-hidden">user menu</span></button>
+                <button class="header__btn header__btn--user-menu" type="button">
+                    <span class="visually-hidden">user menu</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -82,13 +89,19 @@
         <section class="catalog d-flex space-between container container--box">
             <div class="catalog__filters">
                 <div class="catalog__category">
-                    <h3 class="catalog__title"></h3>
-                    <ul class="catalog__list">
-
-                    </ul>
+                    <h3 class="catalog__title">category</h3>
+                    <form class="filter" action="#">
+                        <label class="filter__inner d-flex space-between">
+                            <span class="filter__name">Chair</span>
+                            <div class="filter__box">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__checker"></span>
+                            </div>
+                        </label>
+                    </form>
                 </div>
                 <div class="category__price">
-                    <h3 class="catalog__title"></h3>
+                    <h3 class="catalog__title">price</h3>
                     <input class="catalog__range" type="text" name="my_range" value="" data-min="0" data-max="1000"
                         data-from="100" data-to="500">
                 </div>
@@ -100,34 +113,36 @@
         <div class="partners">
             <div class="partners__slider container container--box">
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
+                    <img class="partners__logo" src="./images/partners/logo_partner-1.png"
+                        alt="Partner Peterson Stephanie">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
+                    <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
+                    <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
+                    <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
+                    <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-1.png" alt="Partner Peterson Stephanie">
+                    <img class="partners__logo" src="./images/partners/logo_partner-1.png"
+                        alt="Partner Peterson Stephanie">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-2.png" alt="Partner KMN Consulting">
+                    <img class="partners__logo" src="./images/partners/logo_partner-2.png" alt="Partner KMN Consulting">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-3.png" alt="Partner CHAINFORCE">
+                    <img class="partners__logo" src="./images/partners/logo_partner-3.png" alt="Partner CHAINFORCE">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-4.png" alt="Partner NEXTG3N">
+                    <img class="partners__logo" src="./images/partners/logo_partner-4.png" alt="Partner NEXTG3N">
                 </a>
                 <a class="partners__links" href="#">
-                    <img class="partners__logo" src="./images/logo_partner-5.png" alt="Partner VINTAGE">
+                    <img class="partners__logo" src="./images/partners/logo_partner-5.png" alt="Partner VINTAGE">
                 </a>
             </div>
         </div>

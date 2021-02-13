@@ -1,3 +1,46 @@
-.category__price{
+.catalog {
+    padding-top: 120px;
+
+    &__title {
+        @extend %dms-b;
+        font-size: 18px;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 38px;
+            height: 3px;
+            background-color: #a3bbc8;
+            left: 115px;
+            top: 10px;
+
+        }
+    }
+}
+
+.category__price {
     width: 300px;
+}
+
+
+.filter {
+    &__inner {
+        padding: 15px 22px 15px 15px;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__name {
+        color: #243f4d;
+    }
+
+    &__input {
+        &:checked {
+            background-color: red;
+        }
+    }
 }

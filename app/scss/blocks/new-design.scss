@@ -17,11 +17,11 @@
         grid-gap: 30px 30px;
         margin-bottom: 118px;
 
-        @media(max-width: $sm) {
+        @media(max-width: $lg) {
             grid-template-columns: repeat(2, 1fr)
         }
 
-        @media(max-width: $vs) {
+        @media(max-width: $sm) {
             grid-template-columns: repeat(1, 1fr)
         }
 
