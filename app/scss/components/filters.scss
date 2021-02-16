@@ -1,0 +1,34 @@
+.filters {
+    &__title {
+        @extend %dms-b;
+        font-size: 18px;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        display: inline-block;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 38px;
+            height: 3px;
+            background-color: #a3bbc8;
+            right: -55px;
+            top: 10px;
+
+        }
+    }
+
+    &__price {
+        width: 270px;
+        margin-bottom: 70px;
+    }
+
+    &__range {
+        margin-bottom: 30px;
+    }
+
+    &__min-max {
+        padding-top: 30px;
+    }
+}

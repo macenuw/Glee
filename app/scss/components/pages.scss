@@ -1,0 +1,27 @@
+.pages {
+    padding: 110px 0 120px;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        @extend %rubik-r;
+        border: 1px solid #a3bbc8;
+        padding: 19px 22px;
+        color: #243f4d;
+
+        &:hover {
+            background-color: #a3bbc8;
+            color: white;
+        }
+
+        &--active {
+            background-color: #a3bbc8;
+            color: white;
+        }
+    }
+
+}

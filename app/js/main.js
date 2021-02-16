@@ -30,8 +30,26 @@ $(function () {
         ]
     });
 
-    $('.catalog__range').ionRangeSlider({
+
+    $(".star").rateYo({
+        starWidth: "11px",
+        normalFill: "#d6d6d6",
+        ratedFill: "#ffcc00",
+        readOnly: true,
+      });
+
+
+    $('.filters__range').ionRangeSlider({
         type: "double",
+        prefix: "$",
+        onStart: function (data) {
+            $('.filters__min').text('$'+data.from+'.00');
+            $('.filters__max').text('$'+data.to+'.00');
+        },
+        onChange: function (data) {
+            $('.filters__min').text('$'+data.from+'.00');
+            $('.filters__max').text('$'+data.to+'.00');
+        },
     });
 
     var menuBtn = document.querySelector('.header__menu-btn');
@@ -42,6 +60,7 @@ $(function () {
     $('.menu__link').on('click', function () {
         $('.header__menu-btn').removeClass('is-active');
     });
+
 
     var mixer1 = mixitup('.week-product__items', {
         selectors: {

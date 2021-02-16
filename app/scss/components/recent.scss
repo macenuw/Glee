@@ -1,0 +1,19 @@
+.recent {
+    padding-top: 25px;
+
+    &__img {
+        margin-right: 15px;
+    }
+
+    &__info {
+        padding: 6px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name {
+        @extend %rubik-r;
+        font-size: 14px;
+    }
+}

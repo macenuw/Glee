@@ -1,0 +1,22 @@
+.category {
+    margin-bottom: 60px;
+
+    &__link {
+        @extend %rubik-r;
+        padding: 11px 23px 11px 15px;
+        color: #243f4d;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #edf1f4;
+
+            .category__info {
+                color: #243f4d;
+            }
+        }
+    }
+
+    &__info {
+        color: #b3b3b3;
+    }
+}
