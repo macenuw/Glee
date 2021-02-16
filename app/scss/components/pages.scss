@@ -13,6 +13,10 @@
         padding: 19px 22px;
         color: #243f4d;
 
+        @media(max-width: $vs) {
+            padding: 10px 10px;
+        }
+
         &:hover {
             background-color: #a3bbc8;
             color: white;

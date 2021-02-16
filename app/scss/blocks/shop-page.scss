@@ -1,5 +1,27 @@
 .catalog {
     padding-top: 120px;
+    margin: 0 auto;
+
+    @media(max-width: $lg) {
+        flex-direction: column;
+    }
+
+    &__filters {
+        @media(max-width: $lg) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px 130px;
+            margin-bottom: 30px;
+        }
+
+        @media(max-width: $sm) {
+            grid-gap: 30px 30px;
+        }
+
+        @media(max-width: $vs) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 
     &__products {
         width: 100%;
@@ -8,6 +30,22 @@
         grid-gap: 30px 30px;
         margin-left: 30px;
 
+        @media(max-width: $lg) {
+            margin: 0 auto;
+        }
+
+        @media(max-width: $md) {
+            grid-gap: 30px 10px;
+        }
+
+        @media(max-width: $sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width: $vs) {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
     }
 
     &__pages {
@@ -15,46 +53,15 @@
         grid-column-end: 4;
         max-width: 360px;
         margin: 0 auto;
+
+        @media(max-width: $sm) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        @media(max-width: $vs) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
     }
-}
-
-
-
-.irs--flat .irs-line {
-    height: 3px;
-    background-color: #c2d2db;
-}
-
-.irs--flat .irs-bar {
-    height: 4px;
-    background-color: #a3bbc8;
-    top: 24px;
-}
-
-.irs--flat .irs-handle>i:first-child {
-    position: absolute;
-    display: block;
-    top: -2px;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    margin-left: -1px;
-    background-color: #a3bbc8;
-
-}
-
-.irs--flat .irs-handle.state_hover>i:first-child,
-.irs--flat .irs-handle:hover>i:first-child {
-    background-color: #a3bbc8;
-}
-
-.irs--flat .irs-min,
-.irs--flat .irs-max {
-    display: none;
-}
-
-.irs--flat .irs-from,
-.irs--flat .irs-to,
-.irs--flat .irs-single {
-    display: none;
 }

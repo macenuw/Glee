@@ -1,4 +1,7 @@
 .filters {
+    margin: 0 auto;
+    min-width: 270px;
+
     &__title {
         @extend %dms-b;
         font-size: 18px;
@@ -20,6 +23,7 @@
     }
 
     &__price {
+        margin: 0 auto;
         width: 270px;
         margin-bottom: 70px;
     }
@@ -31,4 +35,43 @@
     &__min-max {
         padding-top: 30px;
     }
+}
+
+.irs--flat .irs-line {
+    height: 3px;
+    background-color: #c2d2db;
+}
+
+.irs--flat .irs-bar {
+    height: 4px;
+    background-color: #a3bbc8;
+    top: 24px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -1px;
+    background-color: #a3bbc8;
+
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: #a3bbc8;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
 }
