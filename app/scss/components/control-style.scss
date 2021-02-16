@@ -52,9 +52,11 @@
     padding: 0 30px 0 10px;
     border: transparent;
     border-radius: 4px;
-    color: #333;
     background: none;
     box-shadow: none;
+    @extend %rubik-b;
+    color: #243f4d;
+
 }
 
 .jq-selectbox__trigger {
