@@ -1,0 +1,50 @@
+.blog {
+    padding-top: 120px;
+
+    @media(max-width: $md) {
+        flex-direction: column;
+    }
+
+    &__pages {
+        max-width: 345px;
+    }
+
+    &__filters {
+        max-width: 270px;
+        margin: 0 auto 60px;
+
+        @media(max-width: $md) {
+            order: -1;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    &__input {
+        border: 1px solid #edf1f4;
+        padding: 5px 10px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    &__btn {
+        background-color: #edf1f4;
+        border: none;
+        padding: 13px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .s-search {
+        margin: auto;
+        fill: #243f4d;
+    }
+
+    &__date {
+        color: #9a9a9a;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+}
