@@ -1,11 +1,18 @@
 .recent {
-    padding-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: .3s;
+
+    &:hover {
+        background-color: #edf1f4;
+    }
 
     &__img {
         margin-right: 15px;
     }
 
     &__info {
+        color: #243f4d;
         padding: 6px 0;
         display: flex;
         flex-direction: column;
