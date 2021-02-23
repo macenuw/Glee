@@ -1,0 +1,58 @@
+.author {
+    padding: 70px 0;
+
+    &__inner {
+        width: 100%;
+        border-top: 2px solid #ebebeb;
+        border-bottom: 2px solid #ebebeb;
+        padding: 25px 0;
+        align-items: center;
+
+        @media(max-width: $md) {
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper {
+        max-width: 77px;
+        max-height: 77px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    &__name {
+        @extend %rubik-m;
+        font-size: 18px;
+        color: #333333;
+        padding: 15px 0 15px 30px;
+    }
+
+    &__position {
+        @extend %rubik-r;
+        color: #666;
+        display: block;
+        padding-top: 10px;
+    }
+
+    &__share {
+        padding-right: 20px;
+    }
+
+    &__item {
+        &+& {
+            margin-top: 15px;
+        }
+
+        &:first-child>.author__link:first-child {
+            margin-left: 28px;
+        }
+    }
+
+    &__link {
+        color: #666;
+    }
+}

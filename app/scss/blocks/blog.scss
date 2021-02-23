@@ -18,39 +18,6 @@
         }
     }
 
-    &__search {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    &__input {
-        border: 1px solid #edf1f4;
-        padding: 5px 10px;
-        border-radius: 5px 0 0 5px;
-    }
-
-    &__btn {
-        background-color: #edf1f4;
-        border: none;
-        padding: 13px;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        outline: transparent;
-
-        &:hover {
-            background-color: #243f4d;
-
-            .s-search {
-                fill: white;
-            }
-        }
-    }
-
-    .s-search {
-        margin: auto;
-        fill: #243f4d;
-    }
-
     &__date {
         color: #9a9a9a;
         font-size: 12px;

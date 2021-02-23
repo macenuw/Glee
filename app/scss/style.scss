@@ -20,6 +20,11 @@
 @import'./components/filters.scss';
 @import'./components/control-style.scss';
 @import'./components/article.scss';
+@import'./components/search.scss';
+@import'./components/blog-post.scss';
+@import'./components/author.scss';
+@import'./components/comments.scss';
+@import'./components/leave-comment.scss';
 // blocks
 @import'./blocks/header.scss';
 @import'./blocks/breadcrumbs.scss';
@@ -32,3 +37,4 @@
 @import'./blocks/team.scss';
 @import'./blocks/shop-page.scss';
 @import'./blocks/blog.scss';
+@import'./blocks/blog-details.scss';
