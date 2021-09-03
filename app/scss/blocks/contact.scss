@@ -1,0 +1,137 @@
+.contact {
+    padding-top: 120px;
+
+    &__text {
+        display: block;
+        @extend %pop-b;
+        color: $bg-color;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__title {
+        @extend %dms-b;
+        font-size: 35px;
+        color: #436372;
+        text-align: center;
+    }
+
+    &__list {
+        padding: 60px 0 120px;
+
+        @media(max-width: $lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        background-color: #fbfbfb;
+        max-width: 370px;
+        padding: 7% 4%;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid transparent;
+        transition: .5s;
+
+        @media(max-width: $lg) {
+            margin: 30px;
+        }
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+
+        &--active {
+            border-color: $bg-color;
+
+            .contact__icon {
+                background-color: $bg-color;
+            }
+
+            .contact-icon {
+                fill: white;
+            }
+        }
+    }
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        margin-bottom: 60px;
+        transition: .5s;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info {
+        color: #222;
+        @extend %dms-b;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        line-height: 2;
+        min-width: 270px;
+    }
+
+    &__info-text {
+        display: block;
+        @extend %rubik-r;
+        color: #565872;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    &__form {
+        @media(max-width: $md) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .leave-comments {
+            padding-bottom: 0;
+
+            @media(max-width: $md) {
+                margin-bottom: 15px;
+            }
+
+            &__input {
+                border-color: transparent;
+                background-color: #fafafa;
+
+                &::placeholder {
+                    text-transform: uppercase;
+                }
+            }
+
+            &__btn {
+                border-radius: 3px;
+
+                @media(max-width: $md) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &__map {
+        margin-left: 50px;
+
+        @media(max-width: $md) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__map-config {
+        width: 515px;
+        height: 335px;
+
+        @media(max-width: $md) {
+            width: 100%;
+        }
+    }
+}

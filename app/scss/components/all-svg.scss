@@ -24,6 +24,7 @@
     margin: auto;
     fill: #666;
     margin-left: 20px;
+    transition: .3s;
 }
 
 .facebook {
@@ -50,4 +51,26 @@
     width: 15px;
     height: 11px;
     fill: #526278;
+    transition: .3s;
+}
+
+
+.contact-icon {
+    fill: $bg-color;
+    transition: .3s;
+}
+
+.location {
+    width: 31px;
+    height: 44px;
+}
+
+.mail {
+    width: 37px;
+    height: 35px;
+}
+
+.phone {
+    width: 37px;
+    height: 45px;
 }

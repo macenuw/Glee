@@ -1,5 +1,7 @@
 .product-card {
     position: relative;
+    max-width: 270px;
+    min-width: 270px;
 
     @media(max-width: $lg) {
         min-width: 240px;

@@ -1,0 +1,53 @@
+.details {
+    &__btns {
+        justify-content: center;
+    }
+
+    &__link {
+        @extend %rubik-m;
+        color: #243f4d;
+        background-color: #edf1f4;
+        width: 240px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 8px;
+        border-radius: 5px;
+        transition: .3s;
+
+        &:hover {
+            background-color: $bg-color;
+            color: white;
+        }
+
+        &.details__link--active {
+            background-color: $bg-color;
+            color: white;
+        }
+    }
+
+    &__content-item {
+        display: none;
+        padding: 35px 0;
+        line-height: 2;
+        color: #243f4d;
+        transition: .5s;
+
+        &.details__content-item--active {
+            display: block;
+        }
+    }
+
+    &__review {
+        align-items: center;
+    }
+
+    &__leave-review {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+
+    .leave-comments__btn {
+        border-radius: 5px;
+    }
+}

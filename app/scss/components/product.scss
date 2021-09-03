@@ -1,0 +1,149 @@
+.product {
+    padding-bottom: 75px;
+
+    &__img {
+        width: 550px;
+        max-height: 530px;
+    }
+
+    &__preview {
+        width: 140px;
+
+        .slick-track,
+        .slick-list {
+            height: 530px !important;
+        }
+    }
+
+    &__preview-inner {
+        border: 2px solid #f2f2f2;
+        outline: transparent;
+        margin-bottom: 19px;
+    }
+
+    &__preview-img {
+        width: 140px;
+        height: 156px;
+        object-fit: contain;
+    }
+
+    &__show {
+        max-width: 385px;
+    }
+
+    &__show-inner {
+        border: 2px solid #f2f2f2;
+    }
+
+    &__show-img {
+        width: 385px;
+        height: 530px;
+        object-fit: none;
+    }
+
+    &__info {
+        max-width: 550px;
+        padding-top: 30px;
+    }
+
+    &__title {
+        @extend %rubik-r;
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    &__star {
+        margin-bottom: 26px;
+    }
+
+    &__price {
+        display: block;
+        @extend %rubik-r;
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    &__btns {
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        @extend %rubik-r;
+        color: #243f4d;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        background-color: $bg-color;
+        color: white;
+        padding: 0 10%;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: #243f4d;
+        }
+    }
+
+    &__link {
+        @extend %rubik-r;
+        color: #243f4d;
+        line-height: 2;
+    }
+}
+
+.jq-number {
+    padding: 0 50px 0;
+    margin-right: 15px;
+
+    &__field {
+        width: 50px;
+        height: 53px;
+        border: 1px solid $bg-color;
+        border-radius: 0;
+
+    }
+
+    input {
+        text-align: center;
+        height: 100%;
+    }
+
+    &__spin {
+        border: 1px solid $bg-color;
+        border-radius: 0;
+        width: 50px;
+        height: 53px;
+        background: white;
+    }
+
+    .minus {
+        left: 1px;
+
+        &:after {
+            border: none;
+            content: '-';
+            top: 15px;
+            left: 22px;
+
+        }
+    }
+
+    .plus {
+        right: 1px;
+
+        &:after {
+            border: none;
+            content: '+';
+            top: 15px;
+            left: 18px;
+
+        }
+    }
+}

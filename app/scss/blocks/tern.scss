@@ -1,0 +1,28 @@
+.tern {
+    padding-top: 120px;
+
+    &__title {
+        @extend %rubik-m;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        padding-left: 25px;
+        list-style-type: decimal-leading-zero;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+        line-height: 1.7;
+    }
+
+    &__text {
+        margin-bottom: 70px;
+        line-height: 1.8;
+    }
+
+    &__articles {
+        padding-top: 50px;
+    }
+}
